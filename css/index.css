@@ -64,9 +64,9 @@ video {
     display: flex;
     justify-content: center;
 }
-.pic_link div:first-child {
+.pic_link div {
     width: 16%;
-    background-image: url("img/floor.jpg");
+
 }
 .pic_link img {
     width: 100%;
