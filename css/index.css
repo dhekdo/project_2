@@ -116,6 +116,13 @@ video {
     border-radius: 50px;
     font-size: 0.8rem;
     letter-spacing: 0.8px;
+    cursor: pointer;
+}
+.main_info button:hover {
+    background-color: black;
+}
+.main_info button:hover a{
+    color: white;
 }
 
                     /* 사진 링크 구좌 */
