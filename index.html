@@ -4,40 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOTEL</title>
+    <title>쉼이 있는 곳, ONSTAY</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('#allbt').hover(function(){
+            $('.allmenu').show();
+        });
+        $('#fabricbt').hover(function(){
+            $('.fabric').show();
+        });
+    </script>
 </head>
+
 <body>
 
     <div class="all">
+                                    <!-- 상단 구좌 -->
         <section class="top">
             <header>
                 <nav>
+                    <div class="logobox">
+                        <a href="index.html"><img src="img/logo.png" alt="로고"></a>
+                    </div>
                     <ul>
                         <li><a href="#">ROOMS</a></li>
                         <li><a href="#">DINING</a></li>
                         <li><a href="#">SPA</a></li>
-                        <li><a href="#">ACTIVITIES</a></li>
+                        <li><a href="#">COLLABORATION</a></li>
                         <li><a href="#">RESERVATION</a></li>
                     </ul>
+                    <div class="menubox">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button><i class="fa-solid fa-bars"></i></button>
+                    </div>
                 </nav>
             </header>
             <video src="video/slidervideo.mp4" autoplay muted></video>
         </section>
 
-        <section 텍스트+버튼 채우기>
+                                            <!-- 메인 설명 구좌 -->
+        <section class="main_info">
+            <!-- <img src="img/logo_bl.png" alt=""> -->
+            <h5>ONSTAY</h5>
+            <h1>TRADITIONAL MODERNITY</h1>
+            <h6>온스테이는 최고의 휴식을 제공합니다.</h6>
+            <P>전통적인 한옥과 현대의 모던한 인테리어 속에서 여러분의 소중한 시간을 완벽하게 채워드립니다.<br>
+            현재 온스테이는 다양한 작가 콜라보레이션을 통해 온스테이에서의 더 완벽한 휴식을 위한 제품들을 준비하고 있습니다.</P>
+
+            <button>
+                <a href="">ROBE</a>
+            </button>
+            <button>
+                <a href="">TEA</a>
+            </button>
+            <button>
+                <a href="">BLANKET</a>
+            </button>
+        </section>
+                                        <!-- 사진 링크 구좌 -->
+        <section class="pic_link">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/ct.jpg" alt="사진링크1">
+                        <div class="textbox">
+                            <h4>FABRIC</h4>
+                            <p>세계 최상의 패브릭을 선정하여<br>
+                                고급스러움을 더했습니다
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/floor.jpg" alt="사진링크2">
+                        <div class="textbox">
+                            <h4>FLOORING</h4>
+                            <p>전통 방식의 바닥재가<br>
+                            놀라운 경험을 선사합니다
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/light.jpg" alt="사진링크3">
+                        <div class="textbox">
+                            <h4>MOOD</h4>
+                            <p>따뜻하면서 아늑한 공간은<br>
+                            쉼에 있어 완벽합니다</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/spa.jpg" alt="사진링크4">
+                        <div class="textbox">
+                            <h4>SPA</h4>
+                            <p>프라이빗한 공간으로<br>
+                            조용한 쉼을 선사합니다</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/de.jpg" alt="사진링크5">
+                        <div class="textbox">
+                            <h4>DESIGN</h4>
+                            <p>소장가치 200%<br>
+                            수면의 질을 높입니다</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/tea.jpg" alt="사진링크6">
+                        <div class="textbox">
+                            <h4>RELAX</h4>
+                            <p>여유있는 대화를 위해<br>
+                            TEA ROOM을 제공합니다</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+                                    <!-- looking 구좌 -->
+        <section class="looking">
+            <div class="photobox">
+                <p>WHAT<br>ARE YOU LOOKING FOR?</p>
+                <div class="allmenu">
+                    <div class="left"><img src="img/all1.jpg" alt="전체1"></div>
+                    <div class="middle"><img src="img/all2.jpg" alt="전체2"></div>
+                    <div class="right right4"><img src="img/all3_1.jpg" alt="전체3"></div>
+                    <div class="bottom"><img src="img/all4.jpg" alt="전체4"></div>
+                </div>
+                <div class="fabric">
+                    <div class="left left2"><img src="img/fb5.jpg" alt="패브릭1"></div>
+                    <div class="left_bottom"><img src="img/fb3.jpg" alt="패브릭2"></div>
+                    <div class="middle"><img src="img/fb2.jpg" alt="패브릭3"></div>
+                    <div class="right right3"><img src="img/fb1.jpg" alt="패브릭4"></div>
+                    <div class="bottom bottom2"><img src="img/fb6.jpg" alt="패브릭5"></div>
+                </div>
+                <div class="flooring">
+                    <div class="left"><img src="img/fl1.jpg" alt="바닥1"></div>
+                    <div class="left left3"><img src="img/fl3.jpg" alt="바닥2"></div>
+                    <div class="middle"><img src="img/fl2.jpg" alt="바닥2"></div>
+                    <div class="right"><img src="img/fl5.jpg" alt="바닥3"></div>
+                    <div class="bottom"><img src="img/fl4.jpg" alt="바닥4"></div>
+                </div>
+                <div class="mood">
+                    <div class="left left4"><img src="img/mo1.jpg" alt="무드1"></div>
+                    <div class="middle"><img src="img/mo2.jpg" alt="무드2"></div>
+                    <div class="right right2"><img src="img/mo3.jpg" alt="무드3"></div>
+                    <div class="bottom"><img src="img/mo4.jpg" alt="무드4"></div>
+                </div>
+                <div class="spa">
+                    <div class="left"><img src="img/spa1.jpg" alt="스파1"></div>
+                    <div class="middle"><img src="img/spa2.jpg" alt="스파2"></div>
+                    <div class="left left3"><img src="img/spa3.jpg" alt="스파3"></div>
+                    <div class="bottom"><img src="img/spa4.jpg" alt="스파4"></div>
+                </div>
+                <div class="design">
+                    <div class="left left5"><img src="img/de1.jpg" alt="디자인1"></div>
+                    <div class="middle"><img src="img/de2.jpg" alt="디자인2"></div>
+                    <div class="right"><img src="img/de3.jpg" alt="디자인3"></div>
+                    <div class="bottom"><img src="img/de4.jpg" alt="디자인4"></div>
+                </div>
+                <div class="tea">
+                    <div class="left"><img src="img/tea3.jpg" alt="티룸1"></div>
+                    <div class="left left3"><img src="img/tea4.jpg" alt="티룸2"></div>
+                    <div class="middle"><img src="img/tea2.jpg" alt="티룸2"></div>
+                    <div class="bottom bottom3"><img src="img/tea5.jpg" alt="티룸4"></div>
+                </div>
+
+                <div class="btbox">
+                    <button id="allbt">ALL</button>
+                    <button id="fabricbt">FABRIC</button>
+                    <button>FLOORING</button>
+                    <button>MOOD</button>
+                    <button>SPA</button>
+                    <button>DESIGN</button>
+                    <button>TEA</button>
+                </div>
+            </div>
+        </section>
+
+                                 <!-- 스페셜 오퍼 구좌 -->
+        <section class="offer">
+            <p>SPECIAL OFFERS</p>
+            <div>
+                <i class="fa-solid fa-plus"><a href=""> MORE</a></i>
+            </div>
 
         </section>
 
-        <section class="pic_link">
-            <div><a href=""><img src="img/ct.jpg" alt="">
-                    
-            </a></div>
-            <div><a href=""><img src="img/floor.jpg" alt=""></a></div>
-            <div><a href=""><img src="img/light.jpg" alt=""></a></div>
-            <div><a href=""><img src="img/spa.jpg" alt=""></a></div>
-            <div><a href=""><img src="img/de.jpg" alt=""></a></div>
-            <div><a href=""><img src="img/tea.jpg" alt=""></a></div>
+        <section>
+
         </section>
     </div>
     
