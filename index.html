@@ -12,14 +12,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-        $('#allbt').hover(function(){
-            $('.allmenu').show();
-        });
-        $('#fabricbt').hover(function(){
-            $('.fabric').show();
-        });
-    </script>
 </head>
 
 <body>
@@ -45,7 +37,7 @@
                     </div>
                 </nav>
             </header>
-            <video src="video/slidervideo.mp4" autoplay muted></video>
+            <video src="video/slidervideo.mp4" autoplay muted playsinline></video>
         </section>
 
                                             <!-- 메인 설명 구좌 -->
@@ -139,6 +131,13 @@
         <section class="looking">
             <div class="photobox">
                 <p>WHAT<br>ARE YOU LOOKING FOR?</p>
+                <div class="defalt">
+                    <div class="left"><img src="img/def1.jpg" alt="기본1"></div>
+                    <div class="left left3"><img src="img/def4.jpg" alt="기본4"></div>
+                    <div class="middle"><img src="img/def2.jpg" alt="기본2"></div>
+                    <div class="right right4"><img src="img/def3.jpg" alt="기본3"></div>
+                    <div class="bottom"><img src="img/def5.jpg" alt="기본4"></div>
+                </div>
                 <div class="allmenu">
                     <div class="left"><img src="img/all1.jpg" alt="전체1"></div>
                     <div class="middle"><img src="img/all2.jpg" alt="전체2"></div>
@@ -210,6 +209,6 @@
         </section>
     </div>
     
-
+    <script src="js/index.js"></script>
 </body>
 </html>

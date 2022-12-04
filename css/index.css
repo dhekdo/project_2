@@ -170,7 +170,7 @@ video {
     width: 100%;
     position: relative;
 }
-.fabric, .flooring, .mood, .spa, .design , .tea  {
+.allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
     display: none;
 }
 .looking p {
@@ -266,6 +266,7 @@ video {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
     cursor: pointer;
+    color: black;
 }
 .btbox button:hover {
     background-color: black;
