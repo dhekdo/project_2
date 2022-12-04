@@ -1,56 +1,58 @@
+// looking 구좌
+// 호버하면 이미지 전환
 
 $('#allbt').hover(function(){
-    $('.allmenu').show();
+    $('.allmenu').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.allmenu').hide();
 });
 
 $('#fabricbt').hover(function(){
-    $('.fabric').show();
+    $('.fabric').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.fabric').hide();
 });
 
 $('#flbt').hover(function(){
-    $('.flooring').show();
+    $('.flooring').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.flooring').hide();
 });
 
 $('#moodbt').hover(function(){
-    $('.mood').show();
+    $('.mood').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.mood').hide();
 });
 
 $('#spabt').hover(function(){
-    $('.spa').show();
+    $('.spa').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.spa').hide();
 });
 
 $('#designbt').hover(function(){
-    $('.design').show();
+    $('.design').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.design').hide();
 });
 
 $('#teabt').hover(function(){
-    $('.tea').show();
+    $('.tea').fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').show();
+    $('.defalt').fadeIn();
     $('.tea').hide();
 });

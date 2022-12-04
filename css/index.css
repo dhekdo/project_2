@@ -18,7 +18,7 @@ a {
 }
 
 .all {
-    min-width: 1400px;
+    min-width: 1200px;
 }
 
                         /* 상단 구좌 */
@@ -65,12 +65,13 @@ nav .menubox {
     width: 8%;
 }
 nav button {
-    width: 20%;
+    width: 10%;
     color: white;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1.1rem;
     margin: 0 11px;
     border: none;
+    cursor: pointer;
 }
 video {
     width: 100%;
@@ -117,6 +118,9 @@ video {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
     cursor: pointer;
+}
+.main_info button  a {
+    color: black;
 }
 .main_info button:hover {
     background-color: black;
@@ -174,6 +178,8 @@ video {
     display: none;
 }
 .looking p {
+    width: 40%;
+    margin: 0 auto;
     font-family: 'Tenor Sans', sans-serif;
     font-size: 2.7rem;
     font-weight: lighter;
