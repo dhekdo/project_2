@@ -28,6 +28,7 @@ a {
     position: relative;
     top: 0;
     overflow: hidden;
+    min-width: 1200px;
 }
 header {
     width: 100%;
@@ -65,7 +66,7 @@ nav .menubox {
     width: 8%;
 }
 nav button {
-    width: 10%;
+    width: 15%;
     color: white;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1.1rem;
@@ -83,7 +84,7 @@ video {
                     /* 메인 설명 구좌 */
 .main_info {
     width: 80%;
-    margin: 100px auto;
+    margin: 8% auto;
     text-align: center;
 }
 .main_info h1 {
@@ -109,7 +110,7 @@ video {
 }
 .main_info button {
     width: 13%;
-    margin: 30px 10px;
+    margin: 3% 1%;
     padding: 6px 5px;
     background-color: #F7F5EC;
     color: black;
@@ -132,7 +133,7 @@ video {
                     /* 사진 링크 구좌 */
 .pic_link {
     width: 80%;
-    margin: 30px auto;
+    margin: 3% auto;
 }
 .pic_link ul {
     display: flex;
@@ -150,7 +151,7 @@ video {
     position: absolute;
     top: 0;
     width: 100%;
-    margin: 40px auto 0px;
+    margin: 16% auto 0px;
     padding: 10px;
     text-align: center;
     color: white;
@@ -167,7 +168,7 @@ video {
                         /* LOOKING 구좌 */
 .looking {
     width: 100%;
-    margin: 130px auto 0;
+    margin: 11.5% auto 0;
     text-align: center;
 }
 .looking .photobox {
@@ -281,7 +282,7 @@ video {
                         /* 스페셜 오퍼 구좌 */
 .offer {
     width: 80%;
-    margin: 120px auto;
+    margin: 13% auto;
     text-align: center;
 }
 .offer > p {
@@ -294,4 +295,41 @@ video {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
     float: right;
+    margin: 2% 3% 0;
 }
+.offer a {
+    color: black;
+}
+.typebox {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+}
+.type1, .type2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.type1 {
+    width: 55%;
+}
+.type2 {
+    width: 45%;
+}
+.type1 img {
+    width: 50%;
+    padding: 5%;
+}
+.type1 img:first-child {
+    width: 100%;
+}
+.type2 img {
+    width: 100%;
+    padding: 6%;
+}
+
+
+                        /* 푸터 */
+footer {
+    width: 100%;
+}
+
