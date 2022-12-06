@@ -5,6 +5,12 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: #F7F5EC;
 }
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
 * {
     margin: 0;
     padding: 0;
