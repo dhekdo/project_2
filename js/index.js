@@ -60,10 +60,9 @@ $('#teabt').hover(function(){
 
 // 서치 아이콘 클릭
 $('.fa-magnifying-glass').click(function(){
-    $('.searchBox').show();
+    $('.searchBox').toggle();
 });
 
 $('.fa-circle-xmark').click(function(){
     $('.searchBox').hide();
 });
-

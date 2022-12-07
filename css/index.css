@@ -66,7 +66,10 @@ nav ul li {
     padding: 0 30px;
     text-align: center;
 }
-nav ul li:hover {
+nav ul li a:active {
+    color: #b4b5b6;
+}
+nav ul li:hover a {
     border-bottom: 1px solid white;
 }
 nav ul li a {
@@ -78,11 +81,15 @@ nav .menubox {
     width: 8%;
     position: relative;
 }
+nav .menubox i:active {
+    color: #b4b5b6;
+}
+
 nav .searchBox {
     width: 100%;
     position: absolute;
-    bottom: 0%;
-    right: -10%;
+    bottom: 0;
+    left: 0;
     display: none;
 }
 nav .searchBox input {
@@ -441,6 +448,11 @@ video {
     display: flex;
     opacity: 0.9;
 }
+.typebox button {
+    background-color: #F7F5EC;
+    border: none;
+    cursor: pointer;
+}
 .type1, .type2, .type3 {
     display: flex;
     flex-wrap: wrap;
@@ -454,18 +466,29 @@ video {
 .type3 {
     width: 30%;
 }
-.type1 img {
+.type1 button {
     width: 50%;
-    padding: 5%;
-    cursor: pointer;
+    padding: 4%;
+}
+.type1 button:first-child {
+    width: 100%;
 }
 .type1 img:first-child {
     width: 100%;
 }
-.type2 img, .type3 img {
+.type2 button, .type3 button {
     width: 100%;
-    padding: 7%;
+    padding: 7.5%;
     cursor: pointer;
+}
+.type2 button img, .type3 button img {
+    width: 100%;
+}
+.type1 img:hover, .type2 img:hover, .type3 img:hover {
+    opacity: 0.9;
+}
+.typebox button:focus img {
+    opacity: 0.2;
 }
 
                                 /* 메인 텍스트 구좌 */
@@ -563,7 +586,7 @@ video {
 }
 .our_stay .housetext {
     width: 100%;
-    padding: 1% 3%;
+    padding: 3% 3%;
     position: absolute;
     bottom: -100%;
     right: 0;
