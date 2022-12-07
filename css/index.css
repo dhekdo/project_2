@@ -356,7 +356,7 @@ video {
  }
  .comming:hover span {
     opacity: 1;
-    bottom: 20%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
  }
@@ -491,14 +491,14 @@ video {
     padding: 0.5% 2%;
     border-radius: 50px;
     float: right;
+    transition: all 0.25s;
 }
 .our_stay .housetext h4:hover:after {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.9);
     border: 1px solid black;
     box-shadow: 0 0 0 2px white;
     opacity: 1;
     color: black;
-    font-weight: 400;
 }
 
 
