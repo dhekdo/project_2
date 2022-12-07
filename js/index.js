@@ -2,57 +2,68 @@
 // 호버하면 이미지 전환
 
 $('#allbt').hover(function(){
-    $('.allmenu').fadeIn();
+    $('.allmenu').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.allmenu').hide();
 });
 
 $('#fabricbt').hover(function(){
-    $('.fabric').fadeIn();
+    $('.fabric').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.fabric').hide();
 });
 
 $('#flbt').hover(function(){
-    $('.flooring').fadeIn();
+    $('.flooring').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.flooring').hide();
 });
 
 $('#moodbt').hover(function(){
-    $('.mood').fadeIn();
+    $('.mood').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.mood').hide();
 });
 
 $('#spabt').hover(function(){
-    $('.spa').fadeIn();
+    $('.spa').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.spa').hide();
 });
 
 $('#designbt').hover(function(){
-    $('.design').fadeIn();
+    $('.design').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.design').hide();
 });
 
 $('#teabt').hover(function(){
-    $('.tea').fadeIn();
+    $('.tea').stop().fadeIn();
     $('.defalt').hide();
 }, function(){
-    $('.defalt').fadeIn();
+    $('.defalt').stop().fadeIn();
     $('.tea').hide();
 });
+
+
+// 서치 아이콘 클릭
+$('.fa-magnifying-glass').click(function(){
+    $('.searchBox').show();
+});
+
+$('.fa-circle-xmark').click(function(){
+    $('.searchBox').hide();
+});
+
