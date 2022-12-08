@@ -625,7 +625,7 @@ video {
     display: block;
     margin: 5% auto 0;
 }
-.main_text a {
+.main_text button {
     color: black;
     border: 1px solid black;
     padding: 1% 2%;
@@ -635,8 +635,9 @@ video {
     font-size: 0.9rem;
     letter-spacing: 0.8px;
     transition: all 0.4s;
+    cursor: pointer;
 }
-.main_text a:hover {
+.main_text button:hover {
     background-color: black;
     color: white;
 }
@@ -727,7 +728,7 @@ video {
 }
 .upicon i {
     font-size: 2rem;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
                         /* 푸터 */

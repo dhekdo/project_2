@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONSTAY 1:1 문의</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        html {
+            font-size: 16px;
+            background-color: #F7F5EC;
+        }
+        div {
+            width: 80%;
+            margin: 0 auto;
+        }
+        input {
+            outline: none;
+            font-size: 0.9rem;
+            background-color: #F7F5EC;
+            border: 1px solid #333;
+            display: inline-block;
+            margin: 0 auto;
+            
+        }
+        input[type="text"] {
+            width: 10%;
+            
+        }
+        input[type="tel"] {
+            width: 20%;
+        }
+        textarea {
+            margin-top: 1%;
+            background-color: #F7F5EC;
+        }
+        button {
+            width: 40%;
+            padding: 1%;
+            display: block;
+            margin: 1.5% auto 0;
+            background-color: black;
+            border: none;
+            color: white;
+            line-height: 16px;
+        }
+        button:active {
+            background-color: #b4b5b6;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        이름 : <input type="text" placeholder="홍길동">
+        핸드폰 번호 : <input type="tel" placeholder="01012345678"><br>
+        <textarea name="request" cols="47" rows="10" placeholder="문의 내용을 입력해주세요."></textarea>
+        <button id="mainTextBtn">문의하기</button>
+        </div>
+       
+        
+    </form>
+
+    <script>
+        
+        $(function(){
+                $('#mainTextBtn').click(function(){
+                    alert("전송되었습니다.")
+                });
+            });
+    </script>
+</body>
+</html>

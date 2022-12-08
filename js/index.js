@@ -1,6 +1,15 @@
+
+// 서치 아이콘 클릭
+$('.fa-magnifying-glass').click(function(){
+    $('.searchBox').toggle();
+});
+
+$('.fa-circle-xmark').click(function(){
+    $('.searchBox').hide();
+});
+
 // looking 구좌
 // 호버하면 이미지 전환
-
 $('#allbt').hover(function(){
     $('.allmenu').stop().fadeIn();
     $('.defalt').hide();
@@ -56,17 +65,6 @@ $('#teabt').hover(function(){
     $('.defalt').stop().fadeIn();
     $('.tea').hide();
 });
-
-
-// 서치 아이콘 클릭
-$('.fa-magnifying-glass').click(function(){
-    $('.searchBox').toggle();
-});
-
-$('.fa-circle-xmark').click(function(){
-    $('.searchBox').hide();
-});
-
 
 // special offers 구좌 클릭
 $('#btn1').click(function(){
@@ -132,3 +130,12 @@ $('#btn7').click(function(){
     $('#btn5T').hide();
     $('#btn6T').hide();
 });
+
+// 메인 텍스트 구좌 상담 요청 버튼 클릭시 팝업 노출
+function showPopup(){
+    window.open(
+        "popup.html",
+        "popup",
+        "width=600, height=500, left=100, top=50"
+    );
+}
