@@ -66,3 +66,69 @@ $('.fa-magnifying-glass').click(function(){
 $('.fa-circle-xmark').click(function(){
     $('.searchBox').hide();
 });
+
+
+// special offers 구좌 클릭
+$('#btn1').click(function(){
+    $('#btn1T').show();
+    $('#btn2T').hide();
+    $('#btn3T').hide();
+    $('#btn4T').hide();
+    $('#btn5T').hide();
+    $('#btn6T').hide();
+    $('#btn7T').hide();
+});
+$('#btn2').click(function(){
+    $('#btn2T').show();
+    $('#btn1T').hide();
+    $('#btn7T').hide();
+    $('#btn3T').hide();
+    $('#btn4T').hide();
+    $('#btn5T').hide();
+    $('#btn6T').hide();
+});
+$('#btn3').click(function(){
+    $('#btn3T').show();
+    $('#btn1T').hide();
+    $('#btn7T').hide();
+    $('#btn2T').hide();
+    $('#btn4T').hide();
+    $('#btn5T').hide();
+    $('#btn6T').hide();
+});
+$('#btn4').click(function(){
+    $('#btn4T').show();
+    $('#btn1T').hide();
+    $('#btn7T').hide();
+    $('#btn3T').hide();
+    $('#btn2T').hide();
+    $('#btn5T').hide();
+    $('#btn6T').hide();
+});
+$('#btn5').click(function(){
+    $('#btn5T').show();
+    $('#btn1T').hide();
+    $('#btn7T').hide();
+    $('#btn3T').hide();
+    $('#btn4T').hide();
+    $('#btn2T').hide();
+    $('#btn6T').hide();
+});
+$('#btn6').click(function(){
+    $('#btn6T').show();
+    $('#btn1T').hide();
+    $('#btn7T').hide();
+    $('#btn3T').hide();
+    $('#btn4T').hide();
+    $('#btn5T').hide();
+    $('#btn2T').hide();
+});
+$('#btn7').click(function(){
+    $('#btn7T').show();
+    $('#btn1T').hide();
+    $('#btn2T').hide();
+    $('#btn3T').hide();
+    $('#btn4T').hide();
+    $('#btn5T').hide();
+    $('#btn6T').hide();
+});

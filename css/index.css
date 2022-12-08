@@ -35,6 +35,7 @@ a {
     top: 0;
     overflow: hidden;
     min-width: 1200px;
+    z-index: 100;;
 }
 header {
     width: 100%;
@@ -129,7 +130,7 @@ video {
     width: 100%;
     position: absolute;
     top: 0;
-    cursor: pointer
+    cursor: pointer;
 }
 
                     /* 메인 설명 구좌 */
@@ -358,7 +359,7 @@ video {
 }
 .comming .comming_img {
     width: 100%;
-    margin: 2% auto;
+    margin: 3% auto;
     position: relative;
     transition: all 2s;
     overflow: hidden;
@@ -468,28 +469,126 @@ video {
 }
 .type1 button {
     width: 50%;
-    padding: 4%;
+    padding: 5.3%;
+    position: relative;
 }
+
 .type1 button:first-child {
     width: 100%;
 }
+.type1 button:first-child div {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    padding: 5.3%;
+    background-clip: content-box;
+    display: none;
+}
+.type1 button:not(:first-child) div {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    padding: 10.5%;
+    background-clip: content-box;
+    display: none;
+    
+}
 .type1 img:first-child {
     width: 100%;
+    height: 100%;
 }
+
 .type2 button, .type3 button {
     width: 100%;
     padding: 7.5%;
     cursor: pointer;
+    position: relative;
 }
+.type2 button div, .type3 button div {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    padding: 7.5%;
+    background-clip: content-box;
+    display: none;
+}
+.typebox h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1%;
+    text-transform: uppercase;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.typebox p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    padding: 1%;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 6%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.typebox p::after {
+    content: "더보기";
+    border: 1px solid white;
+    font-weight: 600;
+    border-radius: 40px;
+    padding: 1%;
+    display: block;
+    width: 40%;
+    margin: 6% auto 0;
+}
+.typebox p:hover::after {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 0 2px white;
+    color: black;
+}
+.typebox .type1 button p {
+    font-size: 0.75rem;
+}
+.typebox .type1 button:first-child p {
+    font-size: 1rem;
+}
+
+.typebox .type1 button:first-child h1 {
+    font-size: 1.9rem;
+}
+.typebox .type1 button:not(:first-child) h1 {
+    font-size: 1.1rem;
+} 
 .type2 button img, .type3 button img {
     width: 100%;
+    height: 100%;
 }
 .type1 img:hover, .type2 img:hover, .type3 img:hover {
     opacity: 0.9;
 }
-.typebox button:focus img {
-    opacity: 0.2;
-}
+/* .typebox button:focus img {
+    opacity: 0.7;
+} */
+
+
 
                                 /* 메인 텍스트 구좌 */
 .main_text {
@@ -613,6 +712,23 @@ video {
     color: black;
 }
 
+                        /* 위로가기 버튼 */
+
+.upicon {
+    width: 1%;
+    position: fixed;
+    bottom: 25%;
+    right: 2%;
+}
+.upicon button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.upicon i {
+    font-size: 2rem;
+    opacity: 0.6;
+}
 
                         /* 푸터 */
 footer {
