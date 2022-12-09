@@ -529,7 +529,7 @@ video {
 }
 .typebox h1 {
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: lighter;
     padding: 1%;
     text-transform: uppercase;
     position: relative;
@@ -584,10 +584,6 @@ video {
 .type1 img:hover, .type2 img:hover, .type3 img:hover {
     opacity: 0.9;
 }
-/* .typebox button:focus img {
-    opacity: 0.7;
-} */
-
 
 
                                 /* 메인 텍스트 구좌 */
@@ -644,7 +640,7 @@ video {
 
 
                         /* 다른지점 소개 구좌 */
-.our_stay {
+/* .our_stay {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -711,7 +707,47 @@ video {
     box-shadow: 0 0 0 2px white;
     opacity: 1;
     color: black;
+} */
+
+.our_stay {
+    width: 75%;
+    margin: 10% auto;
+    overflow: hidden;
+    
 }
+.slidewrap {
+    width: 70%;
+    margin: 0 auto;
+}
+.slideul {
+    width: 600%;
+    display: flex;
+    margin-left:-94%;
+}
+.slideul li {
+    width: 15%;
+    margin: 0.5%;
+}
+.slideul li img {
+    width: 100%;
+}
+.slidewrap i {
+    font-size: 4rem;
+    color: red;
+    position: absolute;
+    top: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+.slidewrap i.prev {
+    left: 0;
+}
+.slidewrap i.next {
+    right: 1%;
+}
+
+
 
                         /* 위로가기 버튼 */
 

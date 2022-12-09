@@ -139,3 +139,17 @@ function showPopup(){
         "width=600, height=500, left=100, top=50"
     );
 }
+
+// our stay 슬라이드
+$('.prev').click(function(){
+    $('.slideul li:last').prependTo('.slideul');
+    $('.slideul').css('margin-left','-188%');
+    $('.slideul').stop().animate({marginLeft:"-94%"},800);
+});
+
+$('.next').click(function(){
+    $('.slideul').stop().animate({marginLeft:"-190%"},800, function(){
+        $('.slideul li:first').appendTo('.slideul');
+        $('.slideul').css({marginLeft:"-94%"});
+    });
+});
