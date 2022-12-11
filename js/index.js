@@ -1,3 +1,14 @@
+// 바메뉴 클릭시 메뉴 펼쳐짐
+$('.barmenu').click(function(){
+    $('header').css({'background':'#F7F5EC','opacity':'0.8'});
+    $('nav ul li a').css('color','black');
+    $('.menubox i').css('color','black');
+    $('.logobox2').show();
+    $('.logobox').hide();
+    $('nav ul li ul').toggle();
+    $('.searchBox').hide();
+
+});
 
 // 서치 아이콘 클릭
 $('.fa-magnifying-glass').click(function(){
@@ -6,6 +17,10 @@ $('.fa-magnifying-glass').click(function(){
 
 $('.fa-circle-xmark').click(function(){
     $('.searchBox').hide();
+});
+
+$('.fa-magnifying-glass').click(function(){
+    $('nav ul li ul').hide();
 });
 
 // looking 구좌

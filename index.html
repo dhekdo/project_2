@@ -24,16 +24,54 @@
                     <div class="logobox">
                         <a href="index.html"><img src="img/logo.png" alt="로고"></a>
                     </div>
+                    <div class="logobox2">
+                        <a href="index.html"><img src="img/logo_bl.png" alt="로고"></a>
+                    </div>
                     <ul>
-                        <li><a href="#">ROOMS</a></li>
-                        <li><a href="#">DINING</a></li>
-                        <li><a href="#">SPA</a></li>
-                        <li><a href="#">COLLABORATION</a></li>
-                        <li><a href="#">RESERVATION</a></li>
+                        <li><a href="#">ROOMS</a>
+                        <ul>
+                            <li>fabric</li>
+                            <li>flooring</li>
+                            <li>mood</li>
+                            <li>spa</li>
+                            <li>design</li>
+                            <li>relax</li>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="#">DINING</a>
+                            <ul>
+                                <li>breakfast</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OUR STAY</a>
+                            <ul>
+                                <li>seoul</li>
+                                <li>jeju</li>
+                                <li>gurye</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">COLLABORATION</a>
+                            <ul>
+                                <li>honey deram</li>
+                                <li>twg</li>
+                                <li>nubizio</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">RESERVATION</a>
+                            <ul>
+                                <li>room</li>
+                                <li>membership</li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="menubox">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button><i class="fa-solid fa-bars"></i></button>
+                        <button class="barmenu"><i class="fa-solid fa-bars"></i></button>
+                        <!-- <button class="exit"><i class="fa-solid fa-xmark"></i></button> -->
                         <div class="searchBox">
                             <input type="search" placeholder="새로운 ONSTAY">
                             <i class="fa-regular fa-circle-xmark"></i>
@@ -285,59 +323,75 @@
 
 
                                                 <!-- 다른 지점 소개 구좌 -->
-        <!-- <section class="our_stay">
-            <p>OUR STAY</p>
-            <div>
-                <a href="">
-                    <img src="img/house1.jpg" alt="집1">
-                    <div class="housetext">
-                        <h4>첫번째 집</h4>
-                        <p>서울시 강남구 논현로 140길 21<br>
-                        TEL. 02-547-1234</p>
-                    </div>
-                </a>
-                
-            </div>
-            <div>
-                <a href="">
-                    <img src="img/house2.jpg" alt="집2">
-                    <div class="housetext">
-                        <h4>두번째 집</h4>
-                        <p>전라남도 구례군 용방면 죽정길 57-58<br>
-                        TEL. 061-355-1234</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="img/house3.jpg" alt="집3">
-                    <div class="housetext">
-                        <h4>세번째 집</h4>
-                        <p>제주도 서귀포시 색달중앙로121번길 45<br>
-                        TEL. 064-123-4567</p>
-                    </div>
-                </a>
-            </div>
-        </section> -->
-
         <section class="our_stay">
-            <div class="slidewrap">
-                <ul class="slideul">
-                    <li><img src="img/house2.jpg" alt="지점1"></li>
-                    <li><img src="img/house3.jpg" alt="지점2"></li>
-                    <li><img src="img/house1.jpg" alt="지점3"></li>
-                    <li><img src="img/house2.jpg" alt="지점1"></li>
-                    <li><img src="img/house3.jpg" alt="지점2"></li>
-                    <li><img src="img/house1.jpg" alt="지점3"></li>
-                </ul>
-                <i class="fa-solid fa-chevron-left prev"></i>
-                <i class="fa-solid fa-chevron-right next"></i>
+            <p>OUR STAY</p>
+            <div class="slidehidden">
+                <div class="slidewrap">
+                    <ul class="slideul">
+                        <li>
+                            <img src="img/house3.jpg" alt="지점1">
+                            <div class="housetext">
+                                <h4>세번째 집</h4>
+                                <h3>ONSTAY JEJU</h3>
+                                <p>제주도 서귀포시 색달중앙로121번길 45<br>
+                                TEL. 064-123-4567</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house1.jpg" alt="지점2">
+                            <div class="housetext">
+                                <h4>첫번째 집</h4>
+                                <h3>ONSTAY SEOUL</h3>
+                                <p>서울시 강남구 논현로 140길 21<br>
+                                TEL. 02-547-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house2.jpg" alt="지점3">
+                            <div class="housetext">
+                                <h4>두번째 집</h4>
+                                <h3>ONSTAY GURYE</h3>
+                                <p>전라남도 구례군 용방면 죽정길 57-58<br>
+                                TEL. 061-355-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house3.jpg" alt="지점1">
+                            <div class="housetext">
+                                <h4>세번째 집</h4>
+                                <h3>ONSTAY JEJU</h3>
+                                <p>제주도 서귀포시 색달중앙로121번길 45<br>
+                                TEL. 064-123-4567</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house1.jpg" alt="지점2">
+                            <div class="housetext">
+                                <h4>첫번째 집</h4>
+                                <h3>ONSTAY SEOUL</h3>
+                                <p>서울시 강남구 논현로 140길 21<br>
+                                TEL. 02-547-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house2.jpg" alt="지점3">
+                            <div class="housetext">
+                                <h4>두번째 집</h4>
+                                <h3>ONSTAY GURYE</h3>
+                                <p>전라남도 구례군 용방면 죽정길 57-58<br>
+                                TEL. 061-355-1234</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
+            <i class="fa-solid fa-chevron-left prev"></i>
+            <i class="fa-solid fa-chevron-right next"></i>
         </section>
-
+                           <!-- sns 위로가기 버튼         -->
         <section class="upicon">
-            <button onclick="window.location.href='#top'"><i class="fa-regular fa-circle-up"></i></button>
+
+            <button onclick="window.location.href='#top'"><i class="fa-solid fa-chevron-up upicon"></i></button> 
         </section>
 
                                     <!-- 푸터 -->
@@ -368,7 +422,13 @@
                 </div>
                 <div class="paylogo">
                     <img src="img/footerimg.png" alt="결제관련로고">
+                    <ul class="snsicon">
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
                 </div>
+                
                 
             </div>
         </footer>
