@@ -1,4 +1,5 @@
 // 바메뉴 클릭시 메뉴 펼쳐짐
+<<<<<<< HEAD
 $('.barmenu').click(function () {
     $('header').toggleClass("headerbg");
     $('nav ul li a, .menubox i').toggleClass("black");
@@ -10,6 +11,16 @@ $('.barmenu').click(function () {
     else {
         $('.logobox a img').attr('src', 'img/logo.png');
     }
+=======
+$('.barmenu').click(function(){
+    $('header').css({'background':'#F7F5EC','opacity':'0.8'});
+    $('nav ul li a').css('color','black');
+    $('.menubox i').css('color','black');
+    $('.logobox2').show();
+    $('.logobox').hide();
+    $('nav ul li ul').toggle();
+    $('.searchBox').hide();
+>>>>>>> 450fafd7545156f4a1658a5aaccbcca65d557cbc
 
 });
 

@@ -50,12 +50,28 @@ nav {
     display: flex;
 }
 nav .logobox {
+<<<<<<< HEAD
     width: 129px;
     margin-top: -0.5%;
+=======
+    width: 7.5%;
+    margin-top: -0.5%;
+}
+nav .logobox2 {
+    width: 7.5%;
+    margin-top: -0.5%;
+    display: none;
+>>>>>>> 450fafd7545156f4a1658a5aaccbcca65d557cbc
 }
 nav .logobox img {
     width: 100%;
 }
+<<<<<<< HEAD
+=======
+nav .logobox2 img {
+    width: 100%;
+}
+>>>>>>> 450fafd7545156f4a1658a5aaccbcca65d557cbc
 nav > ul {
     width:80%;
     margin: 0 auto;
@@ -844,5 +860,8 @@ footer .footinner .paylogo .snsicon li:nth-child(2) a i:hover {
 footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover{
     color: rgb(29, 155, 240);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 450fafd7545156f4a1658a5aaccbcca65d557cbc
 
