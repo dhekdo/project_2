@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쉼이 있는 곳, ONSTAY</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_max_600px.css">
+
     <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
@@ -25,15 +28,50 @@
                         <a href="index.html"><img src="img/logo.png" alt="로고"></a>
                     </div>
                     <ul>
-                        <li><a href="#">ROOMS</a></li>
-                        <li><a href="#">DINING</a></li>
-                        <li><a href="#">SPA</a></li>
-                        <li><a href="#">COLLABORATION</a></li>
-                        <li><a href="#">RESERVATION</a></li>
+                        <li><a href="#">ROOMS</a>
+                        <ul>
+                            <li>fabric</li>
+                            <li>flooring</li>
+                            <li>mood</li>
+                            <li>spa</li>
+                            <li>design</li>
+                            <li>relax</li>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="#">DINING</a>
+                            <ul>
+                                <li>breakfast</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OUR STAY</a>
+                            <ul>
+                                <li>seoul</li>
+                                <li>jeju</li>
+                                <li>gurye</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">COLLABORATION</a>
+                            <ul>
+                                <li>honey deram</li>
+                                <li>twg</li>
+                                <li>nubizio</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">RESERVATION</a>
+                            <ul>
+                                <li>room</li>
+                                <li>membership</li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="menubox">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <button><i class="fa-solid fa-bars"></i></button>
+                        <button class="barmenu"><i class="fa-solid fa-bars"></i></button>
+                        <!-- <button class="exit"><i class="fa-solid fa-xmark"></i></button> -->
                         <div class="searchBox">
                             <input type="search" placeholder="새로운 ONSTAY">
                             <i class="fa-regular fa-circle-xmark"></i>
@@ -119,7 +157,7 @@
                         <div class="textbox">
                             <h4>RELAX</h4>
                             <p>여유있는 대화를 위해<br>
-                            TEA ROOM을 제공합니다</p>
+                            TEA-ROOM을 제공합니다</p>
                         </div>
                     </a>
                 </li>
@@ -214,62 +252,62 @@
             <i class="fa-solid fa-plus"><a href=""> MORE</a></i>
             <div class="typebox">
                 <div class="type1">
-                    <button>
+                    <div>
                         <img src="img/other1.jpg" alt="오퍼1" id="btn1">
                         <div id="btn1T">
                             <h1>#camping</h1>
                             <p>잊지 못 할 추억을 남길 수 있는 새로운 경험</p>
                         </div>
-                    </button>
-                    <button>
+                    </div>
+                    <div>
                         <img src="img/other6.jpg" alt="오퍼2" id="btn2">
                         <div id="btn2T">
                             <h1>#Breakfast</h1>
                             <p>더 편안한 아침을 위한 조식서비스</p>
                         </div>
-                    </button>
-                    <button>
+                    </div>
+                    <div>
                         <img src="img/other7.jpg" alt="오퍼3" id="btn3">
                         <div id="btn3T">
                             <h1>#music</h1>
                             <p>좋은 추억과 함께할 수 있는 이달의 LP</p>
                         </div>
-                    </button>
+                    </div>
                 </div>
                 <div class="type2">
-                    <button>
+                    <div>
                         <img src="img/other4.jpg" alt="오퍼4" id="btn4">
                         <div id="btn4T">
                             <h1>#ocean</h1>
                             <p>제주의 온스테이에서만 즐길 수 있는 바다 전망 별장
                             </p>
                         </div>
-                    </button>
-                    <button>
+                    </div>
+                    <div>
                         <img src="img/other5.jpg" alt="오퍼5" id="btn5">
                         <div id="btn5T">
                             <h1>#forest</h1>
                             <p>구례의 온스테이에서만 즐길 수 있는 숲 전망 별장</p>
 
                         </div>
-                    </button>
+                    </div>
                 </div>
                 <div class="type3">
-                    <button>
+                    <div>
                         <img src="img/other8.jpg" alt="오퍼6" id="btn6">
                         <div id="btn6T">
                             <h1>#jacuzzi</h1>
                             <p>자연과 어우러져 누릴 수 있는 휴식의 공간<br>
                             </p>
                         </div>
-                    </button>
-                    <button>
+                    </div>
+                    <div>
                         <img src="img/other9.jpg" alt="오퍼7" id="btn7">
                         <div id="btn7T">
                             <h1>#library</h1>
                             <p>사색을 위한 가장 이상적인 공간</p>
                         </div>
-                    </button>
+                    </div>
                 </div>
                
             </div>
@@ -285,59 +323,75 @@
 
 
                                                 <!-- 다른 지점 소개 구좌 -->
-        <!-- <section class="our_stay">
-            <p>OUR STAY</p>
-            <div>
-                <a href="">
-                    <img src="img/house1.jpg" alt="집1">
-                    <div class="housetext">
-                        <h4>첫번째 집</h4>
-                        <p>서울시 강남구 논현로 140길 21<br>
-                        TEL. 02-547-1234</p>
-                    </div>
-                </a>
-                
-            </div>
-            <div>
-                <a href="">
-                    <img src="img/house2.jpg" alt="집2">
-                    <div class="housetext">
-                        <h4>두번째 집</h4>
-                        <p>전라남도 구례군 용방면 죽정길 57-58<br>
-                        TEL. 061-355-1234</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="">
-                    <img src="img/house3.jpg" alt="집3">
-                    <div class="housetext">
-                        <h4>세번째 집</h4>
-                        <p>제주도 서귀포시 색달중앙로121번길 45<br>
-                        TEL. 064-123-4567</p>
-                    </div>
-                </a>
-            </div>
-        </section> -->
-
         <section class="our_stay">
-            <div class="slidewrap">
-                <ul class="slideul">
-                    <li><img src="img/house2.jpg" alt="지점1"></li>
-                    <li><img src="img/house3.jpg" alt="지점2"></li>
-                    <li><img src="img/house1.jpg" alt="지점3"></li>
-                    <li><img src="img/house2.jpg" alt="지점1"></li>
-                    <li><img src="img/house3.jpg" alt="지점2"></li>
-                    <li><img src="img/house1.jpg" alt="지점3"></li>
-                </ul>
-                <i class="fa-solid fa-chevron-left prev"></i>
-                <i class="fa-solid fa-chevron-right next"></i>
+            <p>OUR STAY</p>
+            <div class="slidehidden">
+                <div class="slidewrap">
+                    <ul class="slideul">
+                        <li>
+                            <img src="img/house3.jpg" alt="지점1">
+                            <div class="housetext">
+                                <h4>세번째 집</h4>
+                                <h3>ONSTAY JEJU</h3>
+                                <p>제주도 서귀포시 색달중앙로121번길 45<br>
+                                TEL. 064-123-4567</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house1.jpg" alt="지점2">
+                            <div class="housetext">
+                                <h4>첫번째 집</h4>
+                                <h3>ONSTAY SEOUL</h3>
+                                <p>서울시 강남구 논현로 140길 21<br>
+                                TEL. 02-547-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house2.jpg" alt="지점3">
+                            <div class="housetext">
+                                <h4>두번째 집</h4>
+                                <h3>ONSTAY GURYE</h3>
+                                <p>전라남도 구례군 용방면 죽정길 57-58<br>
+                                TEL. 061-355-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house3.jpg" alt="지점1">
+                            <div class="housetext">
+                                <h4>세번째 집</h4>
+                                <h3>ONSTAY JEJU</h3>
+                                <p>제주도 서귀포시 색달중앙로121번길 45<br>
+                                TEL. 064-123-4567</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house1.jpg" alt="지점2">
+                            <div class="housetext">
+                                <h4>첫번째 집</h4>
+                                <h3>ONSTAY SEOUL</h3>
+                                <p>서울시 강남구 논현로 140길 21<br>
+                                TEL. 02-547-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/house2.jpg" alt="지점3">
+                            <div class="housetext">
+                                <h4>두번째 집</h4>
+                                <h3>ONSTAY GURYE</h3>
+                                <p>전라남도 구례군 용방면 죽정길 57-58<br>
+                                TEL. 061-355-1234</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
+            <i class="fa-solid fa-chevron-left prev"></i>
+            <i class="fa-solid fa-chevron-right next"></i>
         </section>
-
+                           <!-- sns 위로가기 버튼         -->
         <section class="upicon">
-            <button onclick="window.location.href='#top'"><i class="fa-regular fa-circle-up"></i></button>
+
+            <button onclick="window.location.href='#top'"><i class="fa-solid fa-chevron-up upicon"></i></button> 
         </section>
 
                                     <!-- 푸터 -->
@@ -368,7 +422,13 @@
                 </div>
                 <div class="paylogo">
                     <img src="img/footerimg.png" alt="결제관련로고">
+                    <ul class="snsicon">
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
                 </div>
+                
                 
             </div>
         </footer>

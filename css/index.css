@@ -35,86 +35,97 @@ a {
     top: 0;
     overflow: hidden;
     min-width: 1200px;
-    z-index: 100;;
+    z-index: 100;
 }
 header {
     width: 100%;
     position: absolute;
-    top: 2.5%;
+    top: 0;
+    line-height: 60px;
     z-index: 100;
 }
 nav {
     width: 90%;
-    margin: 0 auto;
+    margin: 1.5% auto;
     display: flex;
-    flex-wrap: wrap;
 }
 nav .logobox {
-    width: 8%;
-    margin-top: -2px;
+    width: 129px;
+    margin-top: -0.5%;
 }
 nav .logobox img {
     width: 100%;
 }
-nav ul {
+nav > ul {
     width:80%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;    
-    align-items: center;
+    justify-content: center;   
 }
-nav ul li {
-    padding: 0 30px;
+nav > ul > li {
+    padding: 0 3%;
     text-align: center;
+}
+nav > ul > li:nth-of-type(2) a {
+    width: 65px;
 }
 nav ul li a:active {
     color: #b4b5b6;
 }
-nav ul li:hover a {
+nav > ul li:hover a {
     border-bottom: 1px solid white;
 }
 nav ul li a {
     color: white;
     font-size: 1.1rem;
 }
+nav ul li ul {
+    display: none;
+}
+nav ul li ul li {
+    font-size: 0.8rem;
+    line-height: 35px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul li ul li:hover {
+    color: #707070;
+}
 nav .menubox {
-    display: flex;
-    width: 8%;
+    width: 10%;
     position: relative;
 }
 nav .menubox i:active {
     color: #b4b5b6;
 }
-
+nav .menubox .exit {
+    display: none;
+}
 nav .searchBox {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 35%;
+    left: -50%;
     display: none;
 }
+nav .searchBox i {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 36%;
+    right: -75%;
+    cursor: pointer;
+}
 nav .searchBox input {
-    width: 90%;
+    width: 160%;
     outline: none;
     border: none;
     border-radius: 50px;
     background-color: white;
     opacity: 0.5;
     padding: 2px 0px;
-    line-height: 23px;
+    line-height: 25px;
     text-align: center;
-}
-nav .searchBox i {
-    font-size: 1.1rem;
-    width: 8%;
-    color: white;
-    position: absolute;
-    right: 0;
-    bottom: 14.5%;
-    cursor: pointer;
-}
-nav .searchBox i:active {
-    color: #b4b5b6;
 }
 nav button {
     width: 15%;
@@ -126,11 +137,24 @@ nav button {
     cursor: pointer;
     flex-grow: 1;
 }
+header .headerhidden {
+    width: 100%;
+    background-color: red;
+    display: none;
+}
 video {
     width: 100%;
     position: absolute;
     top: 0;
     cursor: pointer;
+}
+
+.headerbg {
+    opacity: 0.8;
+    background-color: #F7F5EC;
+}
+.black {
+    color: black;
 }
 
                     /* 메인 설명 구좌 */
@@ -177,6 +201,8 @@ video {
     background-color: black;
     color: white;
 }
+
+
 
                     /* 사진 링크 구좌 */
 .pic_link {
@@ -449,7 +475,7 @@ video {
     display: flex;
     opacity: 0.9;
 }
-.typebox button {
+.typebox > div {
     background-color: #F7F5EC;
     border: none;
     cursor: pointer;
@@ -467,16 +493,16 @@ video {
 .type3 {
     width: 30%;
 }
-.type1 button {
+.type1 > div {
     width: 50%;
     padding: 5.3%;
     position: relative;
 }
 
-.type1 button:first-child {
+.type1 >div:first-child {
     width: 100%;
 }
-.type1 button:first-child div {
+.type1 > div:first-child div {
     position: absolute;
     background-color: black;
     color: white;
@@ -489,7 +515,7 @@ video {
     background-clip: content-box;
     display: none;
 }
-.type1 button:not(:first-child) div {
+.type1 > div:not(:first-child) div {
     position: absolute;
     background-color: black;
     color: white;
@@ -508,13 +534,13 @@ video {
     height: 100%;
 }
 
-.type2 button, .type3 button {
+.type2 > div, .type3 > div {
     width: 100%;
     padding: 7.5%;
     cursor: pointer;
     position: relative;
 }
-.type2 button div, .type3 button div {
+.type2 > div div, .type3 > div div {
     position: absolute;
     background-color: black;
     color: white;
@@ -529,7 +555,7 @@ video {
 }
 .typebox h1 {
     font-size: 1.6rem;
-    font-weight: lighter;
+    font-weight: 300;
     padding: 1%;
     text-transform: uppercase;
     position: relative;
@@ -539,7 +565,7 @@ video {
 }
 .typebox p {
     font-size: 0.85rem;
-    font-weight: 400;
+    font-weight: 300;
     padding: 1%;
     text-transform: uppercase;
     position: relative;
@@ -549,7 +575,7 @@ video {
     transform: translate(-50%,-50%);
 }
 .typebox p::after {
-    content: "더보기";
+    content: "VIEW ⇀";
     border: 1px solid white;
     font-weight: 600;
     border-radius: 40px;
@@ -564,20 +590,20 @@ video {
     box-shadow: 0 0 0 2px white;
     color: black;
 }
-.typebox .type1 button p {
+.typebox .type1 > div p {
     font-size: 0.75rem;
 }
-.typebox .type1 button:first-child p {
+.typebox .type1 > div:first-child p {
     font-size: 1rem;
 }
 
-.typebox .type1 button:first-child h1 {
+.typebox .type1 > div:first-child h1 {
     font-size: 1.9rem;
 }
-.typebox .type1 button:not(:first-child) h1 {
+.typebox .type1 > div:not(:first-child) h1 {
     font-size: 1.1rem;
 } 
-.type2 button img, .type3 button img {
+.type2 > div img, .type3 > div img {
     width: 100%;
     height: 100%;
 }
@@ -640,13 +666,10 @@ video {
 
 
                         /* 다른지점 소개 구좌 */
-/* .our_stay {
+.our_stay {
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 6% auto;
-    justify-content: center;
-    overflow: hidden;
+    margin: 9% auto;
+    position: relative;
 }
 .our_stay > p {
     width: 100%;
@@ -655,65 +678,11 @@ video {
     font-weight: lighter;
     letter-spacing: 0.8px;
     text-align: center;
-    margin: 4% auto;
-
+    margin: 3.5% auto;
 }
-.our_stay > div {
-    width: 28%;
-    margin: 0 1%;
-    position: relative;
-    cursor: pointer;
-}
-.our_stay > div:hover .housetext {
-   opacity: 1;
-   bottom: 0;
-} 
-.our_stay div img {
+.our_stay .slidehidden {
     width: 100%;
-    height: 100%;
-}
-.our_stay div h4 {
-    font-size: 1rem;
-    margin: 0.5% 0;
-}
-.our_stay div p {
-    width: 100%;
-    font-size: 0.8rem;
-}
-.our_stay .housetext {
-    width: 100%;
-    padding: 3% 3%;
-    position: absolute;
-    bottom: -100%;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    opacity: 0;
-    transition: all 0.35s;
-}
-.our_stay .housetext h4::after {
-    content: "VIEW ⇀";
-    font-weight: 300;
-    font-size: 0.95rem;
-    border: 1px solid white;
-    padding: 0.5% 2%;
-    border-radius: 50px;
-    float: right;
-    transition: all 0.25s;
-}
-.our_stay .housetext h4:hover:after {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid black;
-    box-shadow: 0 0 0 2px white;
-    opacity: 1;
-    color: black;
-} */
-
-.our_stay {
-    width: 75%;
-    margin: 10% auto;
     overflow: hidden;
-    
 }
 .slidewrap {
     width: 70%;
@@ -731,23 +700,58 @@ video {
 .slideul li img {
     width: 100%;
 }
-.slidewrap i {
+.our_stay i {
     font-size: 4rem;
-    color: red;
+    color: black;
     position: absolute;
-    top: 50%;
-    opacity: 0.5;
+    top:38%;
+    opacity: 0.1;
     cursor: pointer;
     
 }
-.slidewrap i.prev {
-    left: 0;
+.our_stay i.prev {
+    left: -8%;
 }
-.slidewrap i.next {
-    right: 1%;
+.our_stay i.next {
+    right: -8%;
 }
-
-
+.our_stay .housetext {
+    text-align: center;
+}
+.our_stay .housetext h4 {
+    font-size: 0.95rem;
+    margin-top: 4.5%;
+}
+.our_stay .housetext h3 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+}
+.our_stay .housetext p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #707070;
+}
+.our_stay .housetext p::after {
+    content: "RESERVATION ⇀";
+    display: block;
+    width: 20%;
+    margin: 5% auto 0;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    padding: 1% 2%;
+    border-radius: 50px;
+    transition: all 0.25s;
+    cursor: pointer;
+    color: black;
+}
+.our_stay .housetext p:hover:after {
+    background: black;
+    color: white;
+}
 
                         /* 위로가기 버튼 */
 
@@ -755,8 +759,8 @@ video {
     width: 1%;
     position: fixed;
     bottom: 25%;
-    right: 2%;
-}
+    right: 3.5%;
+} 
 .upicon button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
@@ -771,11 +775,10 @@ video {
 footer {
     width: 100%;
     background-color: #eae9e0;
-    margin-top: 13%;
 }
 footer .footinner {
     width: 70%;
-    margin: 0 auto;
+    margin: 8% auto 0;
     padding: 2% 0;
     display: flex;
     flex-wrap: wrap;
@@ -819,4 +822,27 @@ footer .footinner .paylogo {
     position: absolute;
     right: 0;
 }
+footer .footinner .paylogo .snsicon {
+    width: 100%;
+    margin-bottom: -5%;
+}
+footer .footinner .paylogo .snsicon li {
+    width: 33%;
+    font-size: 1.8rem;
+}
+footer .footinner .paylogo .snsicon li a {
+    color: black;
+}
+footer .footinner .paylogo .snsicon li:nth-child(1) a i:hover {
+    background: linear-gradient(135deg,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+footer .footinner .paylogo .snsicon li:nth-child(2) a i:hover {
+    color: #f00;
+}
+footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover{
+    color: rgb(29, 155, 240);
+}
+
 

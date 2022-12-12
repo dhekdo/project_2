@@ -4,70 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <title>ONSTAY 1:1 문의</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <style>
         html {
             font-size: 16px;
             background-color: #F7F5EC;
+            font-family: 'Poppins', sans-serif;
         }
-        div {
+        p {
+            font-family: 'Tenor Sans', sans-serif;
+            font-size: 1.7rem;
+            text-align: center;
+        }
+        table {
             width: 80%;
             margin: 0 auto;
-        }
-        input {
-            outline: none;
+            text-align: left;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-spacing: 15px;
             font-size: 0.9rem;
-            background-color: #F7F5EC;
-            border: 1px solid #333;
-            display: inline-block;
-            margin: 0 auto;
-            
         }
-        input[type="text"] {
-            width: 10%;
-            
+        table caption {
+            text-align: right;
+            font-size: 0.8rem;
+            line-height: 20px;
         }
-        input[type="tel"] {
-            width: 20%;
+        table th {
+            width: 30%;
+            font-weight: 400;
         }
-        textarea {
-            margin-top: 1%;
-            background-color: #F7F5EC;
+        table td {
+            width: 50%;
+        }
+        table input {
+            width: 80%;
+            padding: 1%;
+            outline: none;
+        }
+        table textarea {
+            width: 81%;
+            outline: none;
+            resize: none;
         }
         button {
-            width: 40%;
-            padding: 1%;
+            width: 20%;
             display: block;
-            margin: 1.5% auto 0;
+            margin: 3% auto 0;
+            padding: 1%;
             background-color: black;
-            border: none;
             color: white;
-            line-height: 16px;
+            cursor: pointer;
+            border: none;
         }
         button:active {
             background-color: #b4b5b6;
         }
-
     </style>
 </head>
 <body>
+    <p>REQUEST</p>
     <form>
-        <div>
-        이름 : <input type="text" placeholder="홍길동">
-        핸드폰 번호 : <input type="tel" placeholder="01012345678"><br>
-        <textarea name="request" cols="47" rows="10" placeholder="문의 내용을 입력해주세요."></textarea>
-        <button id="mainTextBtn">문의하기</button>
-        </div>
-       
-        
+        <table>
+            <caption>1:1 문의</caption>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" name="na"></td>
+            </tr>
+            <tr>
+                <th>휴대폰</th>
+                <td><input type="tel" name="pho" placeholder="- 없이 입력해주세요"></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="email" name="mail"></td>
+            </tr>
+            <tr>
+                <th>문의 내용</th>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
     </form>
+    
+    <button id="mainTextBtn">문의하기</button>
 
     <script>
         
         $(function(){
                 $('#mainTextBtn').click(function(){
-                    alert("전송되었습니다.")
+                    alert("전송되었습니다.");
+                    self.opener=self;
+                    opener.window.close();
                 });
             });
     </script>
