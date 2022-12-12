@@ -1,28 +1,38 @@
-// 바메뉴 클릭시 메뉴 펼쳐짐
-<<<<<<< HEAD
-$('.barmenu').click(function () {
-    $('header').toggleClass("headerbg");
-    $('nav ul li a, .menubox i').toggleClass("black");
-    $('nav ul li ul').toggle();
-    $('.searchBox').hide();
-    if ($('.logobox a img').attr('src') == 'img/logo.png') {
-        $('.logobox a img').attr('src', 'img/logoblack.png');
-    }
-    else {
-        $('.logobox a img').attr('src', 'img/logo.png');
-    }
-=======
-$('.barmenu').click(function(){
-    $('header').css({'background':'#F7F5EC','opacity':'0.8'});
-    $('nav ul li a').css('color','black');
-    $('.menubox i').css('color','black');
-    $('.logobox2').show();
-    $('.logobox').hide();
-    $('nav ul li ul').toggle();
-    $('.searchBox').hide();
->>>>>>> 450fafd7545156f4a1658a5aaccbcca65d557cbc
+if (window.matchMedia("(min-width: 600px)").matches) { 
+    $('.barmenu').click(function () {
+        $('header').toggleClass("headerbg");
+        $('nav ul li a, .menubox i').toggleClass("black");
+        $('nav ul li ul').toggle();
+        $('.searchBox').hide();
+        if ($('.logobox a img').attr('src') == 'img/logo.png') {
+            $('.logobox a img').attr('src', 'img/logoblack.png');
+        }
+        else {
+            $('.logobox a img').attr('src', 'img/logo.png');
+        }
+    
+    });
+    
 
-});
+} else { 
+    
+
+}
+
+// // 바메뉴 클릭시 메뉴 펼쳐짐
+// $('.barmenu').click(function () {
+//     $('header').toggleClass("headerbg");
+//     $('nav ul li a, .menubox i').toggleClass("black");
+//     $('nav ul li ul').toggle();
+//     $('.searchBox').hide();
+//     if ($('.logobox a img').attr('src') == 'img/logo.png') {
+//         $('.logobox a img').attr('src', 'img/logoblack.png');
+//     }
+//     else {
+//         $('.logobox a img').attr('src', 'img/logo.png');
+//     }
+
+// });
 
 // 서치 아이콘 클릭
 $('.fa-magnifying-glass').click(function(){
