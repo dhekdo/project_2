@@ -795,15 +795,19 @@
                             /* 위로가기 버튼 */
     
     .upicon {
-        width: 1%;
+        width: 8%;
+        background-color: #a5a4a4;
         position: fixed;
-        bottom: 25%;
+        bottom: 5%;
         right: 15%;
+        border-radius: 50px;
+
     } 
     .upicon button {
         background-color: rgba(0, 0, 0, 0);
         border: none;
         cursor: pointer;
+        padding: 5%;
     }
     .upicon i {
         font-size: 0.5rem;
