@@ -53,7 +53,7 @@
         justify-content: space-between;
     }
     nav .logobox {
-        width: 60px;
+        width: 70px;
         margin-top: 1%;
     }
     nav .logobox img {
@@ -100,7 +100,7 @@
         color: #707070;
     }
     nav .menubox {
-        width: 18%;
+        width: 25%;
         position: relative;
         display: flex;
         justify-content: space-around;
@@ -738,7 +738,7 @@
         font-size: 2rem;
         color: white;
         position: absolute;
-        top:31%;
+        top:33%;
         opacity: 0.8;
         cursor: pointer;
         
@@ -794,7 +794,7 @@
     .upicon {
         width: 1%;
         position: fixed;
-        bottom: 25%;
+        bottom: 5%;
         right: 12%;
     } 
     .upicon button {
@@ -803,7 +803,7 @@
         cursor: pointer;
     }
     .upicon i {
-        font-size: 0.2rem;
+        font-size: 0.5rem;
         color: black;
     }
     .upicon .up {
