@@ -776,7 +776,7 @@
     .our_stay .housetext p::after {
         content: "RESERVATION ⇀";
         display: block;
-        width: 85%;
+        width: 90%;
         margin: 5% auto 0;
         font-weight: 300;
         font-size: 0.9rem;
@@ -806,7 +806,7 @@
         cursor: pointer;
     }
     .upicon i {
-        font-size: 0.2rem;
+        font-size: 0.5rem;
         color: black;
     }
     .upicon .up {
