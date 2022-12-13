@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media all and (min-width:321px) and (max-width:600px){
+@media all and (max-width:320px){
     html {
         font-size: 15px;
         font-family: 'Poppins', sans-serif;
@@ -49,18 +49,17 @@
         width: 90%;
         margin: 1.5% auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     nav .logobox {
-        width: 100px;
-        margin-top: -0.4%;
+        width: 70px;
+        margin-top: 1%;
     }
     nav .logobox img {
         width: 100%;
     }
     nav > ul {
-        width:50%;
+        width: 40%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -71,7 +70,7 @@
         padding: 0;
         width: 100%;
         text-align: center;
-        line-height: 40px;
+        line-height: 25px;
     }
     nav > ul > li:nth-of-type(2) a {
         width: 65px;
@@ -84,7 +83,7 @@
     }
     nav ul li a {
         color: white;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     nav ul li ul {
         display: none;
@@ -100,7 +99,8 @@
         color: #707070;
     }
     nav .menubox {
-        width: 25%;
+        width: 20%;
+        margin-right: 2%;
         position: relative;
         display: flex;
         justify-content: space-around;
@@ -738,7 +738,7 @@
         font-size: 2rem;
         color: white;
         position: absolute;
-        top:36%;
+        top:31%;
         opacity: 0.8;
         cursor: pointer;
         
@@ -752,17 +752,17 @@
     .our_stay .housetext {
         text-align: center;
         margin: 0 auto;
-        width: 70%;
+        width: 75%;
     }
     .our_stay .housetext h4 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-top: 4.5%;
     }
     .our_stay .housetext h3 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        line-height: 50px;
+        line-height: 20px;
         letter-spacing: 0.8px;
     }
     .our_stay .housetext p {
@@ -773,7 +773,7 @@
     .our_stay .housetext p::after {
         content: "RESERVATION ⇀";
         display: block;
-        width: 50%;
+        width: 85%;
         margin: 5% auto 0;
         font-weight: 300;
         font-size: 0.9rem;
