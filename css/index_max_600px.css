@@ -65,12 +65,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;   
+        display: none;
     }
     nav > ul > li {
         padding: 0;
         width: 100%;
         text-align: center;
-
+        line-height: 40px;
     }
     nav > ul > li:nth-of-type(2) a {
         width: 65px;
@@ -79,11 +80,11 @@
         color: #b4b5b6;
     }
     nav > ul li:hover a {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
     }
     nav ul li a {
         color: white;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     nav ul li ul {
         display: none;
@@ -99,8 +100,14 @@
         color: #707070;
     }
     nav .menubox {
-        width: 20%;
+        width: 25%;
         position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    nav .menubox i {
+        width: 50%;
     }
     nav .menubox i:active {
         color: #b4b5b6;
@@ -119,7 +126,7 @@
         color: white;
         font-size: 1.2rem;
         position: absolute;
-        top: 36%;
+        top: 35%;
         right: -65%;
         cursor: pointer;
     }
@@ -135,11 +142,10 @@
         text-align: center;
     }
     nav button {
-        width: 15%;
         color: white;
         background-color: rgba(0, 0, 0, 0);
         font-size: 1.1rem;
-        margin: 0 11px;
+        margin: 17% 0;
         border: none;
         cursor: pointer;
         flex-grow: 1;
@@ -172,7 +178,7 @@
     }
     .main_info h1 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
     }
@@ -196,7 +202,7 @@
     .main_info button {
         width: 50%;
         margin: 3% 1%;
-        padding: 1% 1%;
+        padding: 2% 1%;
         background-color: #F7F5EC;
         color: black;
         border: 1px solid black;
@@ -277,6 +283,11 @@
         width: 100%;
         position: relative;
     }
+    .looking .photobox > div {
+        height: 18px;
+        margin: 0 auto 40%;
+
+    }
     .allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
         display: none;
     }
@@ -284,25 +295,25 @@
         width: 100%;
         margin: 0 auto;
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
     }
     .photobox .left {
         position: absolute;
-        top: 27%;
+        top: 35%;
         left: 0;
-        width: 28%;
+        width: 30%;
     }
     .photobox .left2 {
-        top: 38%;
+        top: 43%;
         left: 13%;
         width: 15%;
         z-index: 2;
     }
     .photobox .left3 {
-        top: 45%;
-        left: 17%;
+        top: 55%;
+        left: 13%;
         width: 20%;
     }
     .photobox .left4 {
@@ -316,39 +327,39 @@
     }
     .photobox .left_bottom {
         position: absolute;
-        top: 28%;
+        top: 33%;
         left: 0;
         width: 20%
     }
     .photobox .middle {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 38.5%;
         width: 23%;
     }
     .photobox .right {
         position: absolute;
-        top: 30%;
+        top: 35%;
         right: 10%;
         width: 22%;
         z-index: 2;
     }
     .photobox .right2 {
-        top: 27%;
+        top: 32%;
         right: 7%;
         width: 25%;
     }
     .photobox .right3 {
-        top: 27%;
+        top: 32%;
     }
     .photobox .right4 {
-        top: 33%;
+        top: 38%;
         right: 13%;
         width: 23%;
     }
     .photobox .bottom {
         position: absolute;
-        bottom: 27%;
+        bottom: 10%;
         right: 0;
         width: 28%;
     }
@@ -363,7 +374,7 @@
     }
     .btbox {
         width: 100%;
-        margin: 27% auto 0;
+        margin: 0 auto;
     }
     .btbox button {
         width: 20%;
@@ -395,7 +406,7 @@
     }
     .comming > p {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
     }
@@ -472,7 +483,7 @@
     }
     .offer > p {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
     }
@@ -642,7 +653,7 @@
     }
     .main_text h3 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
     }
@@ -696,7 +707,7 @@
     .our_stay > p {
         width: 100%;
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         font-weight: lighter;
         letter-spacing: 0.8px;
         text-align: center;
@@ -725,21 +736,23 @@
     }
     .our_stay i {
         font-size: 2rem;
-        color: black;
+        color: white;
         position: absolute;
-        top:38%;
-        opacity: 0.1;
+        top:36%;
+        opacity: 0.8;
         cursor: pointer;
         
     }
     .our_stay i.prev {
-        left: -5%;
+        left: 2.5%;
     }
     .our_stay i.next {
-        right: -5%;
+        right: 2.5%;
     }
     .our_stay .housetext {
         text-align: center;
+        margin: 0 auto;
+        width: 70%;
     }
     .our_stay .housetext h4 {
         font-size: 0.9rem;
@@ -792,6 +805,7 @@
     .upicon i {
         font-size: 2rem;
         opacity: 0.3;
+        color: black;
     }
     
                             /* 푸터 */

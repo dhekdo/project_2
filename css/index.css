@@ -50,7 +50,7 @@ nav {
     display: flex;
 }
 nav .logobox {
-    width: 7.5%;
+    width: 125px;
     margin-top: -0.5%;
 }
 nav .logobox img {
@@ -260,6 +260,9 @@ video {
 .looking .photobox {
     width: 100%;
     position: relative;
+}
+.looking .photobox > div {
+    height: 150px;
 }
 .allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
     display: none;
@@ -769,6 +772,7 @@ video {
 .upicon i {
     font-size: 2rem;
     opacity: 0.3;
+    color: black;
 }
 
                         /* 푸터 */

@@ -15,8 +15,18 @@ if (window.matchMedia("(min-width: 600px)").matches) {
     
 
 } else { 
-    
+    $('.barmenu').click(function () {
+        $('header').toggleClass("headerbg");
+        $('nav ul li a, .menubox i').toggleClass("black");
+        $('nav ul').toggle();
+        if ($('.logobox a img').attr('src') == 'img/logo.png') {
+            $('.logobox a img').attr('src', 'img/logoblack.png');
+        }
+        else {
+            $('.logobox a img').attr('src', 'img/logo.png');
+        }
 
+    });
 }
 
 // // 바메뉴 클릭시 메뉴 펼쳐짐
