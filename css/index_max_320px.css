@@ -798,7 +798,7 @@
         width: 1%;
         position: fixed;
         bottom: 25%;
-        right: 10%;
+        right: 15%;
     } 
     .upicon button {
         background-color: rgba(0, 0, 0, 0);
@@ -806,9 +806,11 @@
         cursor: pointer;
     }
     .upicon i {
-        font-size: 2rem;
-        opacity: 0.3;
+        font-size: 0.2rem;
         color: black;
+    }
+    .upicon .up {
+        font-size: 1.7rem;
     }
     
                             /* 푸터 */
@@ -828,7 +830,7 @@
         word-break: keep-all;
     }
     footer .footinner div:first-child {
-        width: 25%;
+        width: 32%;
         margin: 0.6% 0.5% 0;
     }
     footer img {
@@ -876,7 +878,7 @@
         justify-content: flex-end;
     }
     footer .footinner .paylogo .snsicon li {
-        width: 13%;
+        width: 20%;
         font-size: 1.9rem;
     }
     footer .footinner .paylogo .snsicon li a {

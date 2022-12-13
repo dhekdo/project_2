@@ -795,7 +795,7 @@
         width: 1%;
         position: fixed;
         bottom: 25%;
-        right: 10%;
+        right: 12%;
     } 
     .upicon button {
         background-color: rgba(0, 0, 0, 0);
@@ -803,9 +803,11 @@
         cursor: pointer;
     }
     .upicon i {
-        font-size: 2rem;
-        opacity: 0.3;
+        font-size: 0.2rem;
         color: black;
+    }
+    .upicon .up {
+        font-size: 1.7rem;
     }
     
                             /* 푸터 */

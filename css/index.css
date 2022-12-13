@@ -770,9 +770,11 @@ video {
     cursor: pointer;
 }
 .upicon i {
-    font-size: 2rem;
-    opacity: 0.3;
+    font-size: 0.2rem;
     color: black;
+}
+.upicon .up {
+    font-size: 1.7rem;
 }
 
                         /* 푸터 */
