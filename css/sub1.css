@@ -3,7 +3,7 @@
 html {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    background-color: #F7F5EC;
+    background-color: #F0F0F0;
 }
 body {
     -webkit-user-select:none;
@@ -30,10 +30,8 @@ a {
                         /* 상단 구좌 */
 .top {
     width: 100%;
-    height: 100vh;
+    height: 110px;
     position: relative;
-    top: 0;
-    overflow: hidden;
     min-width: 1200px;
     z-index: 100;
 }
@@ -89,7 +87,7 @@ nav ul li ul li {
     cursor: pointer;
 }
 nav ul li ul li:hover {
-    color: #707070;
+    color: #bbbbbb;
 }
 nav .menubox {
     width: 10%;
@@ -145,10 +143,38 @@ header .headerhidden {
 
 .headerbg {
     opacity: 0.8;
-    background-color: #F7F5EC;
+    background-color: #dddddd;
 }
 .black {
     color: black;
+}
+
+
+                            /* 메인 시작 */
+.maincontents {
+    width: 100%;
+    margin: 10% auto;
+}
+.maincontents h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 0.8px;
+}
+.main1 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.main1 .photo {
+    width: 60%;
+}
+.main11 img {
+    width: 90%;
+    position: relative;
+}
+.main1 > h2 {
+    margin: 3% 0 0 -5%;
 }
 
 
@@ -159,7 +185,7 @@ header .headerhidden {
 .upicon {
     width: 1%;
     position: fixed;
-    bottom: 25%;
+    bottom: 10%;
     right: 3.5%;
 } 
 .upicon button {
@@ -178,7 +204,7 @@ header .headerhidden {
                         /* 푸터 */
 footer {
     width: 100%;
-    background-color: #eae9e0;
+    background-color: #dddddd;
 }
 footer .footinner {
     width: 70%;

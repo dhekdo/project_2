@@ -282,11 +282,12 @@
     }
     .looking .photobox {
         width: 100%;
-        position: relative;
     }
-    .looking .photobox > div {
-        height: 18px;
-        margin: 0 auto 40%;
+    .looking .photobox > div:not(:nth-of-type(9)) {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
 
     }
     .allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
@@ -302,80 +303,85 @@
     }
     .photobox .left {
         position: absolute;
-        top: 39%;
+        top: 10%;
         left: 0;
         width: 42%;
     }
     .photobox .left2 {
-        top: 50%;
+        top: 51%;
         left: 18%;
         width: 18%;
         z-index: 2;
     }
     .photobox .left3 {
-        top: 63%;
+        top: 44%;
         left: 5%;
-        width: 18%;
+        width: 28%;
     }
     .photobox .left4 {
-        top: 38%;
+        top: 39%;
         left: 0;
         width: 40%;
     }
     .photobox .left5 {
-        top: 38%;
+        top: 39%;
         width: 40%;
     }
     .photobox .left6 {
-        bottom: 32%;
-        width: 28%;
+        top: 58%;
+        left: 0;
+        width: 30%;
     }
     .photobox .left_bottom {
         position: absolute;
-        top: 33%;
+        top: 14%;
         left: 0;
         width: 30%
     }
     .photobox .middle {
         position: absolute;
-        top: 42%;
-        left: 38.5%;
-        width: 50%;
+        top: 24%;
+        left: 36%;
+        width: 47%;
     }
     .photobox .right {
         position: absolute;
-        top: 35%;
+        top: 36%;
         right: 10%;
-        width: 30%;
+        width: 35%;
         z-index: 2;
     }
     .photobox .right2 {
-        top: 32%;
+        top: 14%;
         right: 7%;
-        width: 28%;
+        width: 32%;
     }
     .photobox .right3 {
-        top: 31%;
+        top: 17%;
         right: 3%;
         width: 25%;
     }
     .photobox .right4 {
-        top: 30%;
+        top: 12%;
         right: 8%;
-        width: 23%;
+        width: 25%;
+    }
+    .photobox .right5 {
+        top: 6%;
+        width: 30%;
     }
     .photobox .bottom {
         position: absolute;
-        bottom: 15%;
+        bottom: 7%;
         right: 0;
-        width: 28%;
+        width: 29%;
     }
     .photobox .bottom2 {
         width: 20%;
     }
     .photobox .bottom3 {
         width: 23%;
-        bottom: 25%;
+        bottom: 12%;
     }
     .photobox img {
         width: 100%;
