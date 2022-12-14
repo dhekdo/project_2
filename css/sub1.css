@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 0.8px;
 }
 ul,li,ol {
     list-style: none;
@@ -157,9 +158,9 @@ header .headerhidden {
 }
 .maincontents h2 {
     font-family: 'Tenor Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 4.6rem;
     font-weight: lighter;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.5px;
 }
 .main1 {
     width: 80%;
@@ -167,17 +168,94 @@ header .headerhidden {
     display: flex;
 }
 .main1 .photo {
-    width: 60%;
+    width: 900px;
+    height: 500px;
+    margin-left: 2%;
 }
 .main11 img {
-    width: 90%;
+    width: 100%;
     position: relative;
 }
 .main1 > h2 {
-    margin: 3% 0 0 -5%;
+    width: 20%;
+    height: 200px;
+    margin: 3% 0 0 -6.4%;
+    color: black;
+    position: relative;
+    letter-spacing: 10px;
+}
+.main1 > h2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-split);
+    width: 32.5%;
+    color: #fff;
+    overflow: hidden;
+}
+.main1 .textbox {
+    width: 20%;
+    margin: 20% 0 0 -2%;
+}
+.main1 .textbox h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 100px;
+}
+.main1 .textbox h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.main1 .textbox p {
+    margin-bottom: 5%;
+    color: #666666;;
+}
+.main1 .textbox ul {
+    display: flex;
+    justify-content: flex-start;
+}
+.main1 .textbox ul li {
+    width: 15%;
+}
+.main1 .textbox ul li a {
+    color: black;
+}
+.main1 .textbox ul li a i {
+    font-size: 1.5rem;
+}
+.main1 .textbox ul li:nth-child(1) a i:hover {
+    background: linear-gradient(135deg,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.main1 .textbox ul li:nth-child(2) a i:hover {
+    color: #f00;
+}
+.main1 .textbox ul li:nth-child(3) a i:hover{
+    color: rgb(29, 155, 240);
 }
 
+.main2 {
+    width: 70%;
+    margin: 7% auto;
+    position: relative;
+    text-align: right;
+}
+.main2 img {
+    width: 1198px;
+    height: 800px;
+}
 
+.main2 p {
+    font-family: 'Tenor Sans', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: -10%;
+    color: black;
+    font-size: 4rem;
+    font-weight: 100;
+    opacity: 0.8;
+}
 
 
                         /* 위로가기 버튼 */
