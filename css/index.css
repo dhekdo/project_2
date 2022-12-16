@@ -24,7 +24,7 @@ a {
 }
 
 .all {
-    min-width: 1200px;
+    min-width: 1000px;
 }
 
                         /* 상단 구좌 */
@@ -34,7 +34,7 @@ a {
     position: relative;
     top: 0;
     overflow: hidden;
-    min-width: 1200px;
+    min-width: 1000px;
     z-index: 100;
 }
 header {
@@ -796,7 +796,7 @@ footer {
     background-color: #eae9e0;
 }
 footer .footinner {
-    width: 70%;
+    width: 80%;
     margin: 8% auto 0;
     padding: 2% 0;
     display: flex;
@@ -804,25 +804,26 @@ footer .footinner {
     align-items: center;
     font-size: 0.8rem;
     position: relative;
+    justify-content: flex-start;
 }
 footer .footinner div:first-child {
     width: 133px;
     margin: 0.6% 3% 0;
 }
 footer img {
-    width: 100%;
+    width: 120px;
 }
-footer ul {
+.foot_info {
     width: 53%;
     display: flex;
     text-align: center;
     margin: 1% 0;
 }
-footer ul li {
+.foot_info > li {
     padding-right: 2%;
 }
 footer div.company {
-    width: 100%;
+    width: 90%;
 }
 footer div.company a {
     font-weight: 600;
@@ -844,10 +845,13 @@ footer .footinner .paylogo {
 footer .footinner .paylogo .snsicon {
     width: 100%;
     margin-bottom: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 footer .footinner .paylogo .snsicon li {
     width: 33%;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 footer .footinner .paylogo .snsicon li a {
     color: black;
