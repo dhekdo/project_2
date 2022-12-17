@@ -168,16 +168,15 @@ header .headerhidden {
     display: flex;
 }
 .main1 .photo {
-    width: 900px;
-    height: 500px;
+    width: 80%;
     margin-left: 2%;
 }
-.main11 img {
+.main11 .photo img {
     width: 100%;
     position: relative;
 }
 .main1 > h2 {
-    width: 20%;
+    width: 18%;
     height: 200px;
     margin: 3% 0 0 -6.4%;
     color: white;
@@ -195,8 +194,8 @@ header .headerhidden {
     overflow: hidden;
 } */
 .main1 .textbox {
-    width: 20%;
-    margin: 20% 0 0 -2%;
+    width: 17%;
+    margin: 20% 0 0;
 }
 .main1 .textbox h3 {
     font-size: 1.5rem;
@@ -216,7 +215,7 @@ header .headerhidden {
     justify-content: flex-start;
 }
 .main1 .textbox ul li {
-    width: 15%;
+    width: 33%;
 }
 .main1 .textbox ul li a {
     color: black;
@@ -237,13 +236,13 @@ header .headerhidden {
 }
 
 .main2 {
-    width: 70%;
+    width: 80%;
     margin: 7% auto;
     position: relative;
     text-align: right;
 }
 .main2 img {
-    width: 1198px;
+    width: 90%;
     height: 800px;
 }
 .main2 .main2_textbox {
@@ -304,7 +303,7 @@ header .headerhidden {
     display: none;
 }
 .main4 .main4_photobox img{
-    width: 1000px;
+    width: 100%;
     height: 700px;
 }
 .main4 .main4_photobox > div {
@@ -314,7 +313,7 @@ header .headerhidden {
     font-family: 'Tenor Sans', sans-serif;
     position: absolute;
     bottom: 10%;
-    right: -13%;
+    right: -10%;
     font-size: 10rem;
     color: black;
     letter-spacing: 10px;
@@ -324,7 +323,7 @@ header .headerhidden {
     top: 0;
     left: 0;
     content: attr(data-split);
-    width: 46%;
+    width: 60%;
     color: #fff;
     overflow: hidden;
 }
@@ -333,7 +332,7 @@ header .headerhidden {
     top: 0;
     left: 0;
     content: attr(data-split);
-    width: 53%;
+    width: 60%;
     color: #fff;
     overflow: hidden;
 }
@@ -342,7 +341,7 @@ header .headerhidden {
     top: 0;
     left: 0;
     content: attr(data-split);
-    width: 53%;
+    width: 60%;
     color: #fff;
     overflow: hidden;
 }

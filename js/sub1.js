@@ -1,5 +1,5 @@
 // 메뉴바 클릭시 전환
-if (window.matchMedia("(min-width: 600px)").matches) { 
+if (window.matchMedia("(min-width: 1280px)").matches) { 
     $('.barmenu').click(function () {
         $('header').toggleClass("headerbg");
         $('nav ul li a, .menubox i').toggleClass("black");
@@ -14,12 +14,6 @@ if (window.matchMedia("(min-width: 600px)").matches) {
         $('header').toggleClass("headerbg");
         $('nav ul li a, .menubox i').toggleClass("black");
         $('nav ul').toggle();
-        if ($('.logobox a img').attr('src') == 'img/logo.png') {
-            $('.logobox a img').attr('src', 'img/logoblack.png');
-        }
-        else {
-            $('.logobox a img').attr('src', 'img/logo.png');
-        }
 
     });
 }

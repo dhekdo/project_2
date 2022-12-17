@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media all and (min-width:321px) and (max-width:800px){
+@media all and (max-width:320px){
     html {
         font-size: 15px;
         font-family: 'Poppins', sans-serif;
@@ -31,7 +31,7 @@
                             /* 상단 구좌 */
     .top {
         width: 100%;
-        height: 60vw;
+        height: 210px;
         position: relative;
         top: 0;
         overflow: hidden;
@@ -47,20 +47,19 @@
     }
     nav {
         width: 90%;
-        margin: 0 auto;
+        margin: 1.5% auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
     nav .logobox {
-        width: 75px;
-        margin-top: 3.3%;
+        width: 65px;
+        margin-top: 1%;
     }
     nav .logobox img {
-        width: 95px;
+        width: 100%;
     }
     nav > ul {
-        width:40%;
+        width: 40%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -71,7 +70,7 @@
         padding: 0;
         width: 100%;
         text-align: center;
-        line-height: 35px;
+        line-height: 25px;
     }
     nav > ul > li:nth-of-type(2) a {
         width: 65px;
@@ -84,7 +83,7 @@
     }
     nav ul li a {
         color: white;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     nav ul li ul {
         display: none;
@@ -100,12 +99,12 @@
         color: #707070;
     }
     nav .menubox {
-        width: 20%;
+        width: 18%;
+        margin-right: 2%;
         position: relative;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        margin-top: 2.8%;
     }
     nav .menubox i {
         width: 50%;
@@ -120,7 +119,7 @@
         width: 100%;
         position: absolute;
         top: 35%;
-        left: -50%;
+        left: -130%;
         display: none;
     }
     nav .searchBox i {
@@ -133,7 +132,7 @@
         display: none;
     }
     nav .searchBox input {
-        width: 140%;
+        width: 250%;
         outline: none;
         border: none;
         border-radius: 50px;
@@ -163,15 +162,15 @@
         top: 0;
     }
     .videobox .videotext {
-        width: 47.5%;
+        width: 50%;
         font-family: 'Tenor Sans', sans-serif;
         position: absolute;
-        top: 70%;
-        left: 70%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%,-50%);
         font-weight: lighter;
         opacity: 0;
-        border-bottom: 2px solid #F7F5EC;
+        border: 2px solid #F7F5EC;
         border-radius: 30%;
         padding: 1%;
         text-align: center;
@@ -183,18 +182,21 @@
         animation-fill-mode: forwards;
     }
     .videobox .videotext:hover {
-        border-color: black;
+        background-color: #F7F5EC;
+    }
+    .videobox .videotext:hover a {
+        color: black;
     }
     .videobox .videotext a {
         color: white;
-        font-size: 1.05rem;
-        letter-spacing: 1px;
+        font-size: 1rem;
+        letter-spacing: 0.7px;
         font-weight: lighter;
     }
     
     @keyframes textdelay {
         to{
-            opacity: 0.8;
+            opacity: 0.5;
         }
         from{
             opacity: 0;
@@ -324,9 +326,9 @@
     }
     .looking .photobox > div:not(:nth-of-type(9)) {
         width: 100%;
-        height: 300px;
-        margin: 0 auto;
+        height: 190px;
         position: relative;
+        margin: 0 auto;
 
     }
     .allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
@@ -342,85 +344,79 @@
     }
     .photobox .left {
         position: absolute;
-        top: 10%;
+        top: 11%;
         left: 0;
-        width: 42%;
+        width: 38%;
     }
     .photobox .left2 {
-        top: 51%;
-        left: 18%;
-        width: 18%;
+        top: 50%;
+        left: 8%;
+        width: 20%;
         z-index: 2;
     }
     .photobox .left3 {
         top: 44%;
         left: 5%;
-        width: 28%;
+        width: 25%;
     }
     .photobox .left4 {
-        top: 39%;
+        top: 21%;
         left: 0;
-        width: 40%;
+        width: 38%;
     }
     .photobox .left5 {
-        top: 39%;
-        width: 40%;
+        top: 25%;
+        width: 35%;
     }
     .photobox .left6 {
-        top: 58%;
-        left: 0;
-        width: 30%;
+        width: 27%;
+        top: 60%;
+        left: 8%;
     }
     .photobox .left_bottom {
         position: absolute;
-        top: 14%;
+        top: 9%;
         left: 0;
-        width: 30%
+        width: 35%
     }
     .photobox .middle {
         position: absolute;
-        top: 24%;
-        left: 36%;
-        width: 47%;
+        top: 35%;
+        left: 31%;
+        width: 45%;
     }
     .photobox .right {
         position: absolute;
-        top: 36%;
-        right: 10%;
-        width: 35%;
+        top: 20%;
+        right: 8%;
+        width: 26%;
         z-index: 2;
     }
     .photobox .right2 {
-        top: 14%;
+        top: 23%;
         right: 7%;
-        width: 32%;
+        width: 25%;
     }
     .photobox .right3 {
-        top: 17%;
-        right: 3%;
-        width: 25%;
+        top: 15%;
     }
     .photobox .right4 {
-        top: 12%;
-        right: 8%;
-        width: 25%;
-    }
-    .photobox .right5 {
-        top: 6%;
+        top: 8%;
+        right: 10%;
         width: 30%;
     }
     .photobox .bottom {
         position: absolute;
-        bottom: 7%;
+        bottom: 3%;
         right: 0;
-        width: 29%;
+        width: 32%;
     }
     .photobox .bottom2 {
         width: 20%;
     }
     .photobox .bottom3 {
-        width: 23%;
-        bottom: 12%;
+        width: 26%;
+        bottom: 15%;
     }
     .photobox img {
         width: 100%;
@@ -430,7 +426,7 @@
         margin: 0 auto;
     }
     .btbox button {
-        width: 20%;
+        width: 35%;
         padding: 1% 1%;
         background-color: #F7F5EC;
         border: 1px solid black;
@@ -441,6 +437,9 @@
         color: black;
         transition: all 0.4s;
     }
+    .btbox button:first-child {
+        width: 60%;
+    }
     .btbox button:hover {
         background-color: black;
         color: white;
@@ -449,7 +448,7 @@
                                 /* comming soon 구좌 */
     .comming {
         width: 100%;
-        margin: 15% auto 9%;
+        margin: 57% auto 9%;
         text-align: center;
         overflow: hidden;
     }
@@ -791,7 +790,7 @@
         font-size: 2rem;
         color: white;
         position: absolute;
-        top:33%;
+        top:31%;
         opacity: 0.8;
         cursor: pointer;
         
@@ -805,7 +804,7 @@
     .our_stay .housetext {
         text-align: center;
         margin: 0 auto;
-        width: 70%;
+        width: 75%;
     }
     .our_stay .housetext h4 {
         font-size: 0.7rem;
@@ -815,7 +814,7 @@
         font-family: 'Tenor Sans', sans-serif;
         font-size: 1.3rem;
         font-weight: 500;
-        line-height: 22px;
+        line-height: 20px;
         letter-spacing: 0.8px;
     }
     .our_stay .housetext p {
@@ -826,7 +825,7 @@
     .our_stay .housetext .houseBt {
         content: "RESERVATION ⇀";
         display: block;
-        width: 80%;
+        width: 90%;
         margin: 5% auto 0;
         font-weight: 300;
         font-size: 0.9rem;
@@ -846,16 +845,18 @@
                             /* 위로가기 버튼 */
     
     .upicon {
-        width: 1%;
+        width: 8%;
         position: fixed;
-        bottom: 20%;
-        right: 12%;
+        bottom: 10%;
+        right: 10%;
         z-index: 4;
+
     } 
     .upicon button {
         background-color: rgba(0, 0, 0, 0);
         border: none;
         cursor: pointer;
+        padding: 5%;
     }
     .upicon i {
         font-size: 0.5rem;
@@ -882,7 +883,7 @@
         word-break: keep-all;
     }
     footer .footinner div:first-child {
-        width: 25%;
+        width: 32%;
         margin: 0.6% 0.5% 0;
     }
     footer img {
@@ -930,7 +931,7 @@
         justify-content: flex-end;
     }
     footer .footinner .paylogo .snsicon li {
-        width: 15%;
+        width: 20%;
         font-size: 1.9rem;
     }
     footer .footinner .paylogo .snsicon li a {

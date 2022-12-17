@@ -1,0 +1,555 @@
+@charset "utf-8";
+
+@media all and (min-width:801px) and (max-width:1280px) {
+
+    html {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #F0F0F0;
+    }
+    body {
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        letter-spacing: 0.8px;
+    }
+    ul,li,ol {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    .all {
+        min-width: 700px;
+    }
+    
+    /* 상단 구좌 */
+    .top {
+        width: 100%;
+        height: 280px;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        min-width: 1000px;
+        z-index: 100;
+        min-width: 700px;
+    }
+
+    header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        line-height: 60px;
+        z-index: 100;
+    }
+
+    nav {
+        width: 90%;
+        margin: 1.5% auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav .logobox {
+        width: 125px;
+        margin-top: -0.5%;
+    }
+
+    nav .logobox img {
+        width: 100%;
+    }
+
+    nav>ul {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    nav>ul>li {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    nav>ul>li:nth-of-type(2) a {
+        width: 65px;
+    }
+
+    nav ul li a:active {
+        color: #b4b5b6;
+    }
+
+    nav>ul li:hover a {
+        border-bottom: 1px solid black;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    nav ul li ul {
+        display: none;
+    }
+
+    nav ul li ul li {
+        font-size: 0.8rem;
+        line-height: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav ul li ul li:hover {
+        color: #707070;
+    }
+
+    nav .menubox {
+        width: 20%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    nav .menubox i:active {
+        color: #b4b5b6;
+    }
+
+    nav .menubox .exit {
+        display: none;
+    }
+
+    nav .searchBox {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: -50%;
+        display: none;
+    }
+
+    nav .searchBox i {
+        color: balck;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 36%;
+        right: -75%;
+        cursor: pointer;
+    }
+
+    nav .searchBox input {
+        width: 160%;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        background-color: white;
+        opacity: 0.5;
+        padding: 2px 0px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    nav button {
+        color: black;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1.1rem;
+        margin: 17% 0;
+        border: none;
+        cursor: pointer;
+        flex-grow: 1;
+    }
+
+    header .headerhidden {
+        width: 100%;
+        background-color: red;
+        display: none;
+    }
+    .headerbg {
+        opacity: 0.8;
+        background-color: #dddddd;
+    }
+    .black {
+        color: black;
+    }
+    
+    
+                                /* 메인 시작 */
+    .maincontents {
+        width: 100%;
+        margin: 0 auto 10%;
+    }
+    .maincontents h2, .mainMap h2 {
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 4.6rem;
+        font-weight: lighter;
+        letter-spacing: 1.5px;
+    }
+    .main1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main1 .photo {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main11 .photo img {
+        width: 100%;
+    }
+    .main1 > h2 {
+        width: 45%;
+        height: 200px;
+        margin: -4.5% 10% 0;
+        color: white;
+        position: relative;
+        letter-spacing: 10px;
+        mix-blend-mode: difference;
+    }
+    /* .main1 > h2::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 32.5%;
+        color: #fff;
+        overflow: hidden;
+    } */
+    .main1 .textbox {
+        width: 30%;
+        margin: 10% 0;
+    }
+    .main1 .textbox h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 100px;
+    }
+    .main1 .textbox h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .main1 .textbox p {
+        margin-bottom: 5%;
+        color: #666666;;
+    }
+    .main1 .textbox ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .main1 .textbox ul li {
+        width: 30%;
+    }
+    .main1 .textbox ul li a {
+        color: black;
+    }
+    .main1 .textbox ul li a i {
+        font-size: 1.5rem;
+    }
+    .main1 .textbox ul li:nth-child(1) a i:hover {
+        background: linear-gradient(135deg,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .main1 .textbox ul li:nth-child(2) a i:hover {
+        color: #f00;
+    }
+    .main1 .textbox ul li:nth-child(3) a i:hover{
+        color: rgb(29, 155, 240);
+    }
+    
+    .main2 {
+        width: 90%;
+        margin: 3% auto 7%;
+        position: relative;
+        text-align: right;
+    }
+    .main2 img {
+        width: 95%;
+        height: 100vh;
+    }
+    .main2 .main2_textbox {
+        position: absolute;
+        bottom: 22%;
+        left: -5%;
+    }
+    .main2 .main2_textbox p {
+        font-family: 'Tenor Sans', sans-serif;
+        color: white;
+        font-size: 4rem;
+        font-weight: 100;
+        position: relative;
+        mix-blend-mode: difference;
+
+    }
+    .main2 > p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 8% auto;
+        line-height: 30px;
+        word-break: keep-all;
+    }
+    /* .main2 .main2_textbox p::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 20%;
+        color: black;
+        overflow: hidden;
+    } */
+    
+    .main3 {
+        width: 100%;
+        height: 100vh;
+    }
+    .main3 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main4 {
+        width: 80%;
+        margin: 10% auto;
+        text-align: center;
+    }
+    .main4 > p {
+        font-size: 1.3rem;
+        line-height: 100px;
+    }
+    .main4 .main4_photobox {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .main4 .main4_photobox .box2, .main4 .main4_photobox .box3 {
+        display: none;
+    }
+    .main4 .main4_photobox img{
+        width: 100%;
+        height: 700px;
+    }
+    .main4 .main4_photobox > div {
+        position: relative;
+    }
+    .main4 .main4_photobox > div p {
+        font-family: 'Tenor Sans', sans-serif;
+        position: absolute;
+        bottom: 10%;
+        right: -7%;
+        font-size: 10rem;
+        color: black;
+        letter-spacing: 10px;
+        display: none;
+    } 
+    .main4 .main4_photobox .box1 p::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 50%;
+        color: #fff;
+        overflow: hidden;
+    }
+    .main4 .main4_photobox .box2 p::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 60%;
+        color: #fff;
+        overflow: hidden;
+    }
+    .main4 .main4_photobox .box3 p::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 60%;
+        color: #fff;
+        overflow: hidden;
+    }
+    .main4 .main4_bt {
+        font-size: 1.6rem;
+        line-height: 80px;
+        letter-spacing: 20px;
+    }
+    .main4 .main4_bt span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: 1.5px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .bt_black {
+        background-color: black;
+    }
+    
+    .mainMap {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto
+    }
+    .mainMap h3 {
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 2.3rem;
+        line-height: 150px;
+        font-weight: 400;
+    }
+    .mainMap p {
+        font-size: 1.3rem;
+        line-height: 100px;
+    }
+    .mainMap p:nth-of-type(2) {
+        line-height: 35px;
+        font-size: 1rem;
+    }
+    .mainMap .map  {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .upicon {
+        width: 1%;
+        position: fixed;
+        bottom: 32%;
+        right: 3.5%;
+    }
+
+    .upicon button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+
+    .upicon i {
+        font-size: 0.2rem;
+        color: black;
+    }
+
+    .upicon .up {
+        font-size: 1.7rem;
+    }
+
+    /* 푸터 */
+    footer {
+        width: 100%;
+        background-color: #dddddd;
+        margin-top: 10%;
+    }
+
+    footer .footinner {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 0.8rem;
+        position: relative;
+    }
+
+    footer .footinner div:first-child {
+        width: 125px;
+        margin: 0.6% 3% 0;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
+    footer ul {
+        width: 70%;
+        display: flex;
+        text-align: center;
+        margin: 1% 0;
+    }
+
+    footer > ul > li {
+        padding-right: 2%;
+    }
+
+    footer div.company {
+        width: 90%;
+        word-break: keep-all;
+    }
+
+    footer div.company a {
+        font-weight: 600;
+        font-size: 0.7rem;
+        color: black;
+    }
+
+    footer div.company a:hover {
+        text-decoration: underline;
+    }
+
+    footer h3 {
+        margin: 1% 0;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    footer .footinner .paylogo {
+        width: 14%;
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    footer .footinner .paylogo img {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    footer .footinner .paylogo .snsicon {
+        width: 100%;
+        margin-bottom: -10%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    footer .footinner .paylogo .snsicon li {
+        width: 33%;
+        font-size: 1.7rem;
+        flex-grow: 1;
+    }
+
+    footer .footinner .paylogo .snsicon li a {
+        color: black;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(1) a i:hover {
+        background: linear-gradient(135deg, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(2) a i:hover {
+        color: #f00;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover {
+        color: rgb(29, 155, 240);
+    }
+
+
+
+}

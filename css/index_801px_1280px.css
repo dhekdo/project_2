@@ -185,9 +185,47 @@
         width: 100%;
         position: absolute;
         top: 0;
-        cursor: pointer;
     }
-
+    .videobox .videotext {
+        width: 35%;
+        font-family: 'Tenor Sans', sans-serif;
+        position: absolute;
+        top: 65%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        font-weight: lighter;
+        opacity: 0;
+        border-bottom: 2px solid #F7F5EC;
+        border-radius: 30%;
+        padding: 1%;
+        text-align: center;
+        cursor: pointer;
+        animation-name: textdelay;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 6s;
+        animation-fill-mode: forwards;
+    }
+    .videobox .videotext:hover {
+        border-color: black;
+    }
+    .videobox .videotext a {
+        color: white;
+        font-size: 1.3rem;
+        letter-spacing: 5px;
+        font-weight: lighter;
+    }
+    
+    @keyframes textdelay {
+        to{
+            opacity: 0.8;
+        }
+        from{
+            opacity: 0;
+        }
+    }
+    
+    
     .headerbg {
         opacity: 0.8;
         background-color: #F7F5EC;
@@ -885,11 +923,10 @@
         font-weight: 600;
         color: #707070;
     }
-
-    .our_stay .housetext p::after {
+    .our_stay .housetext .houseBt {
         content: "RESERVATION ⇀";
         display: block;
-        width: 20%;
+        width: 30%;
         margin: 5% auto 0;
         font-weight: 300;
         font-size: 0.9rem;
@@ -900,18 +937,18 @@
         cursor: pointer;
         color: black;
     }
-
-    .our_stay .housetext p:hover:after {
+    .our_stay .housetext .houseBt:hover {
         background: black;
         color: white;
     }
+    
 
     /* 위로가기 버튼 */
 
     .upicon {
         width: 1%;
         position: fixed;
-        bottom: 25%;
+        bottom: 32%;
         right: 3.5%;
     }
 
