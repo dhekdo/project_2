@@ -1,43 +1,50 @@
 @charset "utf-8";
 
-@media all and (min-width:321px) and (max-width:800px){
+@media all and (min-width:321px) and (max-width:800px) {
     html {
         font-size: 15px;
         font-family: 'Poppins', sans-serif;
-        background-color: #F7F5EC;
+        background-color: #F0F0F0;
     }
+
     body {
-        -webkit-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
     }
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    ul,li,ol {
+
+    ul,
+    li,
+    ol {
         list-style: none;
     }
+
     a {
         text-decoration: none;
     }
-    
+
     .all {
         min-width: 320px;
     }
-    
-                            /* 상단 구좌 */
+
+    /* 상단 구좌 */
     .top {
         width: 100%;
-        height: 60vw;
+        height: 55vw;
         position: relative;
         top: 0;
         overflow: hidden;
         min-width: 320px;
         z-index: 100;
     }
+
     header {
         width: 100%;
         position: absolute;
@@ -45,6 +52,7 @@
         line-height: 60px;
         z-index: 100;
     }
+
     nav {
         width: 90%;
         margin: 0 auto;
@@ -52,43 +60,53 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     nav .logobox {
         width: 75px;
         margin-top: 3.3%;
     }
+
     nav .logobox img {
         width: 95px;
     }
-    nav > ul {
-        width:40%;
+
+    nav>ul {
+        width: 40%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;   
+        justify-content: center;
         display: none;
     }
-    nav > ul > li {
+
+    nav>ul>li {
         padding: 0;
         width: 100%;
         text-align: center;
         line-height: 35px;
     }
-    nav > ul > li:nth-of-type(2) a {
+
+    nav>ul>li:nth-of-type(2) a {
         width: 65px;
     }
+
     nav ul li a:active {
         color: #b4b5b6;
     }
-    nav > ul li:hover a {
+
+    nav>ul li:hover a {
         border-bottom: 1px solid black;
     }
+
     nav ul li a {
         color: white;
         font-size: 1rem;
     }
+
     nav ul li ul {
         display: none;
     }
+
     nav ul li ul li {
         font-size: 0.8rem;
         line-height: 35px;
@@ -96,9 +114,11 @@
         cursor: pointer;
         display: none;
     }
+
     nav ul li ul li:hover {
         color: #707070;
     }
+
     nav .menubox {
         width: 20%;
         position: relative;
@@ -107,15 +127,19 @@
         align-items: flex-start;
         margin-top: 2.8%;
     }
+
     nav .menubox i {
         width: 50%;
     }
+
     nav .menubox i:active {
         color: #b4b5b6;
     }
+
     nav .menubox .exit {
         display: none;
     }
+
     nav .searchBox {
         width: 100%;
         position: absolute;
@@ -123,6 +147,7 @@
         left: -50%;
         display: none;
     }
+
     nav .searchBox i {
         color: white;
         font-size: 1.2rem;
@@ -132,6 +157,7 @@
         cursor: pointer;
         display: none;
     }
+
     nav .searchBox input {
         width: 140%;
         outline: none;
@@ -143,8 +169,9 @@
         line-height: 25px;
         text-align: center;
     }
+
     nav button {
-        color: white;
+        color: black;
         background-color: rgba(0, 0, 0, 0);
         font-size: 1.1rem;
         margin: 17% 0;
@@ -152,727 +179,338 @@
         cursor: pointer;
         flex-grow: 1;
     }
+
     header .headerhidden {
         width: 100%;
         background-color: red;
         display: none;
     }
-    video {
-        width: 100%;
-        position: absolute;
-        top: 0;
-    }
-    .videobox .videotext {
-        width: 50%;
-        font-family: 'Tenor Sans', sans-serif;
-        position: absolute;
-        top: 63%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-weight: lighter;
-        opacity: 0;
-        border: 2px solid #F7F5EC;
-        border-radius: 30%;
-        padding: 1%;
-        text-align: center;
-        cursor: pointer;
-        animation-name: textdelay;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-delay: 6s;
-        animation-fill-mode: forwards;
-    }
-    .videobox .videotext:hover {
-        background-color: #F7F5EC;
-    }
-    .videobox .videotext:hover a {
-        color: black;
-    }
-    .videobox .videotext a {
-        color: white;
-        font-size: 1.05rem;
-        letter-spacing: 1px;
-        font-weight: lighter;
-    }
-    
-    @keyframes textdelay {
-        to{
-            opacity: 0.5;
-        }
-        from{
-            opacity: 0;
-        }
-    }
-    
-    
+
     .headerbg {
         opacity: 0.8;
-        background-color: #F7F5EC;
+        background-color: #dddddd;
     }
+
     .black {
         color: black;
     }
-    
-                        /* 메인 설명 구좌 */
-    .main_info {
-        width: 80%;
-        margin: 6% auto;
-        text-align: center;
-    }
-    .main_info h1 {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
-    }
-    .main_info h5 {
-        font-size: 1.3rem;
-        font-weight: 500;
-        letter-spacing: 0.8px;
-    }
-    .main_info h6 {
-        font-size: 0.9rem;
-        font-weight:500;
-        margin: 10px 0;
-        letter-spacing: 0.8px;
-    }
-    .main_info p {
-        font-size: 0.8rem;
-        letter-spacing: -1px;
-        word-break: keep-all;
-        margin-bottom: 5%;
-    }
-    .main_info button {
-        width: 50%;
-        margin: 3% 1%;
-        padding: 2% 1%;
-        background-color: #F7F5EC;
-        color: black;
-        border: 1px solid black;
-        border-radius: 50px;
-        font-size: 0.8rem;
-        letter-spacing: 0.8px;
-        cursor: pointer;
-        transition: all 0.4s;
-        line-height: 20px;
-    }
-    .main_info button:hover {
-        background-color: black;
-        color: white;
-    }
-    
-    
-    
-                        /* 사진 링크 구좌 */
-    .pic_link {
+
+    /* 메인 시작 */
+    .maincontents {
         width: 100%;
-        margin: 15% auto;
-    
+        margin: 0 auto 10%;
     }
-    .pic_link ul {
+
+    .maincontents h2,
+    .mainMap h2 {
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 2.7rem;
+        font-weight: lighter;
+        letter-spacing: 1.5px;
+    }
+
+    .main1 {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .pic_link ul li {
-        width: 30%;
-        height: 200px;
-        position: relative;
-        margin: 1% 1%;
-        background-color: black;
-    }
-    .pic_link ul li img {
-        transition: all 0.5s;
-        width: 100%;
-        height: 100%
-    }
-    .pic_link ul li:hover img {
-        opacity: 0.7;
-        
-    }
-    .pic_link img {
-        width: 100%;
-        height: 100%;
-        
-    }
-    .pic_link .textbox {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        margin: 16% auto 0px;
-        padding: 10px;
-        text-align: center;
-        color: white;
-    }
-    .pic_link h4 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-    .pic_link p {
-        font-size: 0.8rem;
-        word-break: keep-all;
-    }
-    
-                            /* LOOKING 구좌 */
-    .looking {
-        width: 100%;
-        margin: 15% auto 0;
-        text-align: center;
-        
-    }
-    .looking .photobox {
-        width: 100%;
-    }
-    .looking .photobox > div:not(:nth-of-type(9)) {
-        width: 100%;
-        height: 300px;
-        margin: 0 auto;
-        position: relative;
 
-    }
-    .allmenu, .fabric, .flooring, .mood, .spa, .design , .tea  {
-        display: none;
-    }
-    .looking p {
+    .main1 .photo {
         width: 100%;
         margin: 0 auto;
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
     }
-    .photobox .left {
-        position: absolute;
-        top: 10%;
-        left: 0;
-        width: 42%;
+
+    .main11 .photo img {
+        width: 100%;
     }
-    .photobox .left2 {
-        top: 51%;
-        left: 18%;
-        width: 18%;
-        z-index: 2;
+
+    .main1>h2 {
+        width: 45%;
+        height: 160px;
+        margin: -5.5% 10% 0;
+        color: white;
+        position: relative;
+        letter-spacing: 10px;
+        mix-blend-mode: difference;
     }
-    .photobox .left3 {
-        top: 44%;
-        left: 5%;
-        width: 28%;
+
+    /* .main1 > h2::before {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    content: attr(data-split);
+                                    width: 32.5%;
+                                    color: #fff;
+                                    overflow: hidden;
+                                } */
+    .main1 .textbox {
+        width: 100%;
+        margin: -10% auto 0;
+        text-align: center;
     }
-    .photobox .left4 {
-        top: 39%;
-        left: 0;
-        width: 40%;
+
+    .main1 .textbox h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 70px;
     }
-    .photobox .left5 {
-        top: 39%;
-        width: 40%;
+
+    .main1 .textbox h4 {
+        font-size: 1rem;
+        font-weight: 500;
     }
-    .photobox .left6 {
-        top: 58%;
-        left: 0;
-        width: 30%;
+
+    .main1 .textbox p {
+        margin-bottom: 5%;
+        font-size: 0.9rem;
+        color: #666666;
     }
-    .photobox .left_bottom {
-        position: absolute;
-        top: 14%;
-        left: 0;
-        width: 30%
-    }
-    .photobox .middle {
-        position: absolute;
-        top: 24%;
-        left: 36%;
-        width: 47%;
-    }
-    .photobox .right {
-        position: absolute;
-        top: 36%;
-        right: 10%;
+
+    .main1 .textbox ul {
+        display: flex;
+        margin: 0 auto;
         width: 35%;
-        z-index: 2;
+        justify-content: space-between;
     }
-    .photobox .right2 {
-        top: 14%;
-        right: 7%;
-        width: 32%;
+
+    .main1 .textbox ul li {
+        width: 33%;
     }
-    .photobox .right3 {
-        top: 17%;
-        right: 3%;
-        width: 25%;
-    }
-    .photobox .right4 {
-        top: 12%;
-        right: 8%;
-        width: 25%;
-    }
-    .photobox .right5 {
-        top: 6%;
-        width: 30%;
-    }
-    .photobox .bottom {
-        position: absolute;
-        bottom: 7%;
-        right: 0;
-        width: 29%;
-    }
-    .photobox .bottom2 {
-        width: 20%;
-    }
-    .photobox .bottom3 {
-        width: 23%;
-        bottom: 12%;
-    }
-    .photobox img {
-        width: 100%;
-    }
-    .btbox {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .btbox button {
-        width: 20%;
-        padding: 1% 1%;
-        background-color: #F7F5EC;
-        border: 1px solid black;
-        border-radius: 50px;
-        font-size: 0.8rem;
-        letter-spacing: 0.8px;
-        cursor: pointer;
+
+    .main1 .textbox ul li a {
         color: black;
-        transition: all 0.4s;
     }
-    .btbox button:hover {
-        background-color: black;
-        color: white;
+
+    .main1 .textbox ul li a i {
+        font-size: 1.5rem;
     }
-    
-                                /* comming soon 구좌 */
-    .comming {
-        width: 100%;
-        margin: 15% auto 9%;
-        text-align: center;
-        overflow: hidden;
+
+    .main1 .textbox ul li:nth-child(1) a i:hover {
+        background: linear-gradient(135deg, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%);
+        color: transparent;
+        -webkit-background-clip: text;
     }
-    .comming a {
-        width: 100%;
-        color: white;
+
+    .main1 .textbox ul li:nth-child(2) a i:hover {
+        color: #f00;
     }
-    .comming > p {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
+
+    .main1 .textbox ul li:nth-child(3) a i:hover {
+        color: rgb(29, 155, 240);
     }
-    .comming .comming_img {
-        width: 100%;
-        margin: 5% auto;
-        position: relative;
-        transition: all 2s;
-        overflow: hidden;
-    }
-    .comming .comming_img:hover {
-        transform: scale(1.1);
-    }
-    
-    .comming .comming_img img {
-        width: 100%;
-        height: 300px;
-    }
-    .comming .comming_text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%,-50%);
-        color: white;
-        line-height: 30px;
-        letter-spacing: 5px;
-     }
-     .comming .comming_text h4 {
-        font-size: 1.25rem;
-        font-weight: 500;
-     }
-     .comming .comming_text p {
-        font-size: 1.1rem;
-     }
-    
-     .comming .comming_none span {
-        opacity: 1;
-        border: 1px solid white;
-        border-radius: 50px;
-        padding: 0.4% 4%;
-        font-weight: 500;
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        letter-spacing: 0.8px;
-        font-size: 1.1rem;
-     }
-     .comming:hover span {
-        opacity: 1;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-     }
-     .comming .comming_none span:hover {
-        background-color: white;
-        border: 1px solid black;
-        box-shadow: 0 0 0 3px white;
-        opacity: 0.8;
-        color: black;
-        transition: all 0.5s;
-        font-size: 1.1rem;
-     }
-      .comming .comming_none span::after{
-        content: " ⇀";
-        font-weight: 600;
-        font-size: 1rem;
-     }
-    
-                            /* 스페셜 오퍼 구좌 */
-    .offer {
-        width: 100%;
-        margin: 15% auto 8%;
-        text-align: center;
-    }
-    .offer > p {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
-    }
-    .offer i {
-        font-size: 0.8rem;
-        letter-spacing: 0.8px;
+
+    .main2 {
         width: 90%;
-        text-align: right;
-        margin: 3% 0 0;
-    }
-    .offer a {
-        color: black;
-    }
-    .typebox {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        opacity: 0.9;
-    }
-    .typebox > div {
-        background-color: #F7F5EC;
-        border: none;
-        cursor: pointer;
-    }
-    .type1, .type2, .type3 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .type1 {
-        width: 100%;
-    }
-    .type2 {
-        width: 100%;
-    }
-    .type3 {
-        width: 100%;
-    }
-    .type1 > div {
-        width: 100%;
-        height: 399px;
-        padding: 3%;
+        margin: 15% auto 7%;
         position: relative;
+        text-align: right;
+    }
+
+    .main2 img {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .main2 .main2_textbox {
+        position: absolute;
+        bottom: 28%;
+        left: -5%;
+    }
+
+    .main2 .main2_textbox p {
+        font-family: 'Tenor Sans', sans-serif;
+        color: white;
+        font-size: 2.6rem;
+        font-weight: 100;
+        position: relative;
+        mix-blend-mode: difference;
 
     }
-    
-    .type1 >div:first-child {
-        width: 100%;
-    }
-    .type1 > div:first-child div {
-        position: absolute;
-        background-color: black;
-        color: white;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        padding: 3%;
-        background-clip: content-box;
-        display: none;
-    }
-    .type1 > div:not(:first-child) div {
-        position: absolute;
-        background-color: black;
-        color: white;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        padding: 3%;
-        background-clip: content-box;
-        display: none;
-        
-    }
-    .type1 img:first-child {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .type2 > div, .type3 > div {
-        width: 100%;
-        height: 370px;
-        padding: 3%;
-        cursor: pointer;
-        position: relative;
-    }
-    .type2 > div div, .type3 > div div {
-        position: absolute;
-        background-color: black;
-        color: white;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        padding: 3%;
-        background-clip: content-box;
-        display: none;
-    }
-    .typebox h1 {
-        font-size: 1.9rem;
-        font-weight: 300;
-        padding: 1%;
-        text-transform: uppercase;
-        position: relative;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .typebox p {
-        font-size: 1rem;
-        font-weight: 300;
-        padding: 1%;
-        text-transform: uppercase;
-        position: relative;
-        margin-top: 6%;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .typebox p::after {
-        content: "VIEW ⇀";
-        border: 1px solid white;
-        font-weight: 600;
-        border-radius: 40px;
-        padding: 1%;
-        display: block;
-        width: 40%;
-        margin: 6% auto 0;
-    }
-    .typebox p:hover::after {
-        background-color: white;
-        border: 1px solid black;
-        box-shadow: 0 0 0 2px white;
-        color: black;
-    }
-    .typebox .type1 > div p {
-        font-size: 1rem;
-    }
-    .typebox .type1 > div:first-child p {
-        font-size: 1rem;
-    }
-    
-    .typebox .type1 > div:first-child h1 {
-        font-size: 1.9rem;
-    }
-    .typebox .type1 > div:not(:first-child) h1 {
-        font-size: 1.9rem;
-    } 
-    .type2 > div img, .type3 > div img {
-        width: 100%;
-        height: 100%;
-    }
-    .type1 img:hover, .type2 img:hover, .type3 img:hover {
-        opacity: 0.9;
-    }
-    
-    
-                                    /* 메인 텍스트 구좌 */
-    .main_text {
-        width: 80%;
-        margin: 0 auto;
+
+    .main2>p {
         text-align: center;
-        text-transform: uppercase;
-    }
-    .main_text h3 {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
-    }
-    .main_text p {
         font-size: 0.9rem;
-        margin: 2.5% auto;
-        color: rgba(96, 96, 96, 0.7);
-        letter-spacing: 0.8px;
+        margin: 8% auto;
+        line-height: 30px;
         word-break: keep-all;
     }
-    .main_text::before {
-        content: "";
-        width: 1px;
-        height: 200px;
-        background-color: rgba(96, 96, 96, 0.6);
-        display: block;
-        margin: 0 auto 5%;
+
+    /* .main2 .main2_textbox p::before {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    content: attr(data-split);
+                                    width: 20%;
+                                    color: black;
+                                    overflow: hidden;
+                                } */
+
+    .main3 {
+        width: 100%;
+        margin: 16% auto;
+        height: 45vh;
     }
-    .main_text::after {
-        content: "";
-        width: 1px;
-        height: 200px;
-        background-color: rgba(96, 96, 96, 0.6);
-        display: block;
-        margin: 5% auto 0;
+
+    .main3 img {
+        width: 100%;
+        height: 100%;
     }
-    .main_text button {
-        color: black;
-        border: 1px solid black;
-        padding: 2% 2.5%;
-        background-color: #F7F5EC;
-        border: 1px solid black;
-        border-radius: 50px;
-        font-size: 0.9rem;
-        letter-spacing: 0.8px;
-        transition: all 0.4s;
-        cursor: pointer;
+
+    .main4 {
+        width: 80%;
+        margin: 14% auto;
+        text-align: center;
     }
-    .main_text button:hover {
-        background-color: black;
-        color: white;
+
+    .main4>p {
+        font-size: 1rem;
+        line-height: 30px;
+        word-break: normal;
+        margin: 8% auto;
     }
-    
-    
-                            /* 다른지점 소개 구좌 */
-    .our_stay {
-        width: 90%;
-        margin: 9% auto;
+
+    .main4 .main4_photobox {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main4 .main4_photobox .box2,
+    .main4 .main4_photobox .box3 {
+        display: none;
+    }
+
+    .main4 .main4_photobox img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main4 .main4_photobox>div {
+        width: 100%;
         position: relative;
     }
-    .our_stay > p {
-        width: 100%;
+
+    .main4 .main4_photobox>div p {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        font-weight: lighter;
-        letter-spacing: 0.8px;
-        text-align: center;
-        margin: 3.5% auto;
+        position: absolute;
+        bottom: 10%;
+        right: -7%;
+        font-size: 10rem;
+        color: black;
+        letter-spacing: 10px;
+        display: none;
     }
-    .our_stay .slidehidden {
-        width: 100%;
+
+    .main4 .main4_photobox .box1 p::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 50%;
+        color: #fff;
         overflow: hidden;
     }
-    .slidewrap {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .slideul {
-        width: 600%;
-        display: flex;
-        margin-left:-94%;
-    }
-    .slideul li {
-        width: 15%;
-        margin: 0.5%;
-    }
-    .slideul li img {
-        width: 100%;
-        height: 250px;
-    }
-    .our_stay i {
-        font-size: 2rem;
-        color: white;
+
+    .main4 .main4_photobox .box2 p::before {
         position: absolute;
-        top:33%;
-        opacity: 0.8;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 60%;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .main4 .main4_photobox .box3 p::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: attr(data-split);
+        width: 60%;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .main4 .main4_bt {
+        font-size: 1.6rem;
+        line-height: 80px;
+        letter-spacing: 20px;
+    }
+
+    .main4 .main4_bt span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid black;
+        border-radius: 50%;
         cursor: pointer;
-        
     }
-    .our_stay i.prev {
-        left: 2.5%;
+
+    .bt_black {
+        background-color: black;
     }
-    .our_stay i.next {
-        right: 2.5%;
-    }
-    .our_stay .housetext {
+
+    .mainMap {
+        width: 90%;
         text-align: center;
-        margin: 0 auto;
-        width: 70%;
+        margin: 0 auto
     }
-    .our_stay .housetext h4 {
-        font-size: 0.7rem;
-        margin-top: 4.5%;
-    }
-    .our_stay .housetext h3 {
+
+    .mainMap h3 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 1.3rem;
-        font-weight: 500;
-        line-height: 22px;
-        letter-spacing: 0.8px;
+        font-size: 2.3rem;
+        line-height: 100px;
+        font-weight: 400;
     }
-    .our_stay .housetext p {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #707070;
+
+    .mainMap p {
+        font-size: 1rem;
+        line-height: 30px;
     }
-    .our_stay .housetext .houseBt {
-        content: "RESERVATION ⇀";
-        display: block;
-        width: 80%;
-        margin: 5% auto 0;
-        font-weight: 300;
+
+    .mainMap p:nth-of-type(2) {
+        line-height: 20px;
         font-size: 0.9rem;
-        border: 1px solid black;
-        padding: 2% 2%;
-        border-radius: 50px;
-        transition: all 0.25s;
-        cursor: pointer;
-        color: black;
+        word-break: keep-all;
     }
-    .our_stay .housetext .houseBt:hover {
-        background: black;
-        color: white;
-    }
-    
-    
-                            /* 위로가기 버튼 */
-    
+
+
+
+
+    /* 위로가기 버튼 */
+
     .upicon {
         width: 1%;
         position: fixed;
         bottom: 20%;
         right: 12%;
         z-index: 4;
-    } 
+    }
+
     .upicon button {
         background-color: rgba(0, 0, 0, 0);
         border: none;
         cursor: pointer;
     }
+
     .upicon i {
         font-size: 0.5rem;
         color: black;
     }
+
     .upicon .up {
         font-size: 1.7rem;
     }
-    
-                            /* 푸터 */
+
+    /* 푸터 */
     footer {
         width: 100%;
-        background-color: #eae9e0;
+        margin-top: 15%;
+        background-color: #dddddd;
     }
+
     footer .footinner {
         width: 95%;
         margin: 8% auto 0;
@@ -884,74 +522,90 @@
         position: relative;
         word-break: keep-all;
     }
+
     footer .footinner div:first-child {
         width: 25%;
         margin: 0.6% 0.5% 0;
     }
+
     footer img {
         width: 100%;
     }
+
     footer ul {
         width: 80%;
         display: flex;
         text-align: center;
         margin: 3% 0;
     }
+
     footer ul li {
         padding-right: 2%;
     }
+
     footer div.company {
         width: 100%;
         margin: 3% auto;
     }
+
     footer div.company a {
         font-weight: 600;
         font-size: 0.7rem;
         color: black;
     }
+
     footer div.company a:hover {
         text-decoration: underline;
     }
+
     footer h3 {
         margin: 1% 0;
         font-weight: 500;
         font-size: 0.8rem;
     }
+
     footer .footinner .paylogo {
         width: 98%;
         position: relative;
         display: flex;
         margin: 3% auto 0;
     }
+
     footer .footinner .paylogo img {
         width: 25%;
     }
+
     footer .footinner .paylogo .snsicon {
         width: 100%;
         margin-bottom: 0;
         display: flex;
         justify-content: flex-end;
     }
+
     footer .footinner .paylogo .snsicon li {
         width: 15%;
         font-size: 1.9rem;
     }
+
     footer .footinner .paylogo .snsicon li a {
         color: black;
     }
+
     footer .footinner .paylogo .snsicon li:nth-child(1) a i:hover {
-        background: linear-gradient(135deg,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%);
+        background: linear-gradient(135deg, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%);
         color: transparent;
         -webkit-background-clip: text;
     }
+
     footer .footinner .paylogo .snsicon li:nth-child(2) a i:hover {
         color: #f00;
     }
-    footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover{
+
+    footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover {
         color: rgb(29, 155, 240);
     }
-    
-    
-    
-    
+
+
+
+
 }

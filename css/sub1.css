@@ -363,9 +363,12 @@ header .headerhidden {
 }
 
 .mainMap {
-    width: 80%;
+    width: 50%;
     text-align: center;
     margin: 0 auto
+}
+.mainMap .map {
+    width: 50%;
 }
 .mainMap h3 {
     font-family: 'Tenor Sans', sans-serif;
@@ -376,9 +379,10 @@ header .headerhidden {
 .mainMap p {
     font-size: 1.3rem;
     line-height: 100px;
+
 }
 .mainMap p:nth-of-type(2) {
-    line-height: 35px;
+    line-height: 30px;
     font-size: 1rem;
 }
 .mainMap .map  {
