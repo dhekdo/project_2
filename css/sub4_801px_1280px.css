@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+@media all and (min-width:801px) and (max-width:1280px) {
+
+    html {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #F7F5EC;
+    }
+
+    body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        letter-spacing: 0.8px;
+    }
+
+    ul,
+    li,
+    ol {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .all {
+        min-width: 700px;
+    }
+
+    /* 상단 구좌 */
+    .top {
+        width: 100%;
+        height: 280px;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        min-width: 1000px;
+        z-index: 100;
+        min-width: 700px;
+    }
+
+    header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        line-height: 60px;
+        z-index: 100;
+    }
+
+    nav {
+        width: 90%;
+        margin: 1.5% auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav .logobox {
+        width: 125px;
+        margin-top: -0.5%;
+    }
+
+    nav .logobox img {
+        width: 100%;
+    }
+
+    nav>ul {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    nav>ul>li {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    nav>ul>li:nth-of-type(2) a {
+        width: 65px;
+    }
+
+    nav ul li a:active {
+        color: #b4b5b6;
+    }
+
+    nav>ul li:hover a {
+        border-bottom: 1px solid black;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    nav ul li ul {
+        display: none;
+    }
+
+    nav ul li ul li {
+        font-size: 0.8rem;
+        line-height: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav ul li ul li:hover {
+        color: #707070;
+    }
+
+    nav .menubox {
+        width: 20%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    nav .menubox i:active {
+        color: #b4b5b6;
+    }
+
+    nav .menubox .exit {
+        display: none;
+    }
+
+    nav .searchBox {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: -50%;
+        display: none;
+    }
+
+    nav .searchBox i {
+        color: balck;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 36%;
+        right: -75%;
+        cursor: pointer;
+    }
+
+    nav .searchBox input {
+        width: 160%;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        background-color: white;
+        opacity: 0.5;
+        padding: 2px 0px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    nav button {
+        color: black;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1.1rem;
+        margin: 17% 0;
+        border: none;
+        cursor: pointer;
+        flex-grow: 1;
+    }
+
+    header .headerhidden {
+        width: 100%;
+        background-color: red;
+        display: none;
+    }
+
+    .headerbg {
+        opacity: 0.8;
+        background-color: #eae9e0;
+    }
+
+    .black {
+        color: black;
+    }
+
+
+    /* 메인 시작 */
+    .maincon {
+        width: 100%;
+        margin: -10% auto 15%;
+    }
+
+    .maincon h1,
+    h3,
+    h6 {
+        letter-spacing: 0.8px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .maincon h1 {
+        font-size: 4.2rem;
+        line-height: 80px;
+        font-family: 'Tenor Sans', sans-serif;
+    }
+
+    .maincon h3 {
+        font-size: 1.55rem;
+        font-weight: 500;
+    }
+
+    .maincon h6 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 60px;
+    }
+
+    .maincon .mainbox {
+        width: 90%;
+        margin: 4% auto;
+        text-align: center;
+    }
+
+    .maincon .mainbox ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .maincon .mainbox ul h4 {
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 2.3rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .maincon .mainbox ul h5 {
+        font-size: 1.3rem;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .maincon .mainbox ul li {
+        width: 90%;
+        margin: 8% auto;
+    }
+
+    .maincon .mainbox ul li img {
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+    .maincon .mainbox ul li a:hover img {
+        opacity: 0.4;
+    }
+
+    .maincon .mainbox ul li p {
+        line-height: 30px;
+        margin-bottom: 4%;
+        color: #666666;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .maincon .mainbox ul li a:not(:nth-of-type(1)) {
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 2% 6%;
+        margin: 2% 3%;
+        color: black;
+        transition: all 0.4s;
+    }
+
+    .maincon .mainbox ul li a:hover:not(:nth-of-type(1)) {
+        background-color: black;
+        color: white;
+    }
+
+    .maincon .mainbox ul li a:nth-of-type(1) {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    .maincon .mainbox ul li a i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #333;
+        font-size: 3.6rem;
+        opacity: 0.8;
+        display: none;
+        transition: all 0.4s;
+    }
+
+    .maincon .mainbox ul li a:hover i {
+        display: block;
+    }
+
+                    /* 위로가기 버튼 */
+    .upicon {
+        width: 1%;
+        position: fixed;
+        bottom: 32%;
+        right: 3.5%;
+    }
+
+    .upicon button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+    }
+
+    .upicon i {
+        font-size: 0.2rem;
+        color: black;
+    }
+
+    .upicon .up {
+        font-size: 1.7rem;
+    }
+
+    /* 푸터 */
+    footer {
+        width: 100%;
+        background-color: #eae9e0;
+        margin-top: 20%;
+    }
+
+    footer .footinner {
+        width: 100%;
+        margin: 0 auto;
+        padding: 2% 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 0.8rem;
+        position: relative;
+    }
+
+    footer .footinner div:first-child {
+        width: 125px;
+        margin: 0.6% 3% 0;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
+    footer ul {
+        width: 70%;
+        display: flex;
+        text-align: center;
+        margin: 1% 0;
+    }
+
+    footer>ul>li {
+        padding-right: 2%;
+    }
+
+    footer div.company {
+        width: 90%;
+        word-break: keep-all;
+    }
+
+    footer div.company a {
+        font-weight: 600;
+        font-size: 0.7rem;
+        color: black;
+    }
+
+    footer div.company a:hover {
+        text-decoration: underline;
+    }
+
+    footer h3 {
+        margin: 1% 0;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    footer .footinner .paylogo {
+        width: 14%;
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    footer .footinner .paylogo img {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    footer .footinner .paylogo .snsicon {
+        width: 100%;
+        margin-bottom: -10%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    footer .footinner .paylogo .snsicon li {
+        width: 33%;
+        font-size: 1.7rem;
+        flex-grow: 1;
+    }
+
+    footer .footinner .paylogo .snsicon li a {
+        color: black;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(1) a i:hover {
+        background: linear-gradient(135deg, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(2) a i:hover {
+        color: #f00;
+    }
+
+    footer .footinner .paylogo .snsicon li:nth-child(3) a i:hover {
+        color: rgb(29, 155, 240);
+    }
+
+
+
+}

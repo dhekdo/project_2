@@ -4,7 +4,7 @@
     html {
         font-size: 15px;
         font-family: 'Poppins', sans-serif;
-        background-color: #F0F0F0;
+        background-color: #F7F5EC;
     }
 
     body {
@@ -188,7 +188,7 @@
 
     .headerbg {
         opacity: 0.8;
-        background-color: #dddddd;
+        background-color: #eae9e0;
     }
 
     .black {
@@ -196,290 +196,104 @@
     }
 
     /* 메인 시작 */
-    .maincontents {
+    .maincon {
         width: 100%;
-        margin: 0 auto 10%;
+        margin: -18% auto 10%;
     }
-
-    .maincontents h2,
-    .mainMap h2 {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.7rem;
-        font-weight: lighter;
-        letter-spacing: 1.5px;
-    }
-
-    .main1 {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -25%;
-    }
-
-    .main1 .photo {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .main11 .photo img {
-        width: 100%;
-    }
-
-    .main1>h2 {
-        width: 45%;
-        height: 160px;
-        margin: -7% 10% 0;
-        color: white;
-        position: relative;
-        letter-spacing: 10px;
-        mix-blend-mode: difference;
-    }
-
-    /* .main1 > h2::before {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    content: attr(data-split);
-                                    width: 32.5%;
-                                    color: #fff;
-                                    overflow: hidden;
-                                } */
-    .main1 .textbox {
-        width: 100%;
-        margin: -10% auto 0;
+    .maincon h1, h3, h6 {
+        letter-spacing: 0.8px;
+        font-weight: 400;
         text-align: center;
     }
-
-    .main1 .textbox h3 {
+    .maincon h1 {
+        font-size: 3rem;
+        line-height: 80px;
+        font-family: 'Tenor Sans', sans-serif;
+    }
+    .maincon h3 {
         font-size: 1.1rem;
         font-weight: 500;
-        line-height: 70px;
     }
-
-    .main1 .textbox h4 {
-        font-size: 1rem;
+    .maincon h6 {
+        font-size: 0.95rem;
         font-weight: 500;
-    }
-
-    .main1 .textbox p {
-        margin-bottom: 5%;
-        font-size: 0.9rem;
-        color: #666666;
-    }
-
-    .main1 .textbox ul {
-        display: flex;
-        margin: 0 auto;
-        width: 35%;
-        justify-content: space-between;
-    }
-
-    .main1 .textbox ul li {
-        width: 33%;
-    }
-
-    .main1 .textbox ul li a {
-        color: black;
-    }
-
-    .main1 .textbox ul li a i {
-        font-size: 1.5rem;
-    }
-
-    .main1 .textbox ul li:nth-child(1) a i:hover {
-        background: linear-gradient(135deg, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%);
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-
-    .main1 .textbox ul li:nth-child(2) a i:hover {
-        color: #f00;
-    }
-
-    .main1 .textbox ul li:nth-child(3) a i:hover {
-        color: rgb(29, 155, 240);
-    }
-
-    .main2 {
-        width: 90%;
-        margin: 15% auto 7%;
-        position: relative;
-        text-align: center;
-    }
-
-    .main2 img {
-        width: 95%;
-        height: 40vh;
-    }
-
-    .main2 .main2_textbox {
-        position: absolute;
-        bottom: 28%;
-        left: 2%;
-    }
-
-    .main2 .main2_textbox p {
-        font-family: 'Tenor Sans', sans-serif;
-        color: white;
-        font-size: 2.6rem;
-        font-weight: 100;
-        position: relative;
-        mix-blend-mode: difference;
-
-    }
-
-    .main2>p {
-        text-align: center;
-        font-size: 0.9rem;
-        margin: 8% auto;
-        line-height: 30px;
+        line-height: 40px;
         word-break: keep-all;
     }
-
-    /* .main2 .main2_textbox p::before {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    content: attr(data-split);
-                                    width: 20%;
-                                    color: black;
-                                    overflow: hidden;
-                                } */
-
-    .main3 {
-        width: 100%;
-        margin: 16% auto;
-        height: 45vh;
-    }
-
-    .main3 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main4 {
-        width: 80%;
-        margin: 14% auto;
-        text-align: center;
-    }
-
-    .main4>p {
-        font-size: 1rem;
-        line-height: 30px;
-        word-break: normal;
-        margin: 8% auto;
-    }
-
-    .main4 .main4_photobox {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        justify-content: center;
-    }
-
-    .main4 .main4_photobox .box2,
-    .main4 .main4_photobox .box3 {
-        display: none;
-    }
-
-    .main4 .main4_photobox img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .main4 .main4_photobox>div {
-        width: 100%;
-        position: relative;
-    }
-
-    .main4 .main4_photobox>div p {
-        font-family: 'Tenor Sans', sans-serif;
-        position: absolute;
-        bottom: 10%;
-        right: -7%;
-        font-size: 10rem;
-        color: black;
-        letter-spacing: 10px;
-        display: none;
-    }
-
-    .main4 .main4_photobox .box1 p::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: attr(data-split);
-        width: 50%;
-        color: #fff;
-        overflow: hidden;
-    }
-
-    .main4 .main4_photobox .box2 p::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: attr(data-split);
-        width: 60%;
-        color: #fff;
-        overflow: hidden;
-    }
-
-    .main4 .main4_photobox .box3 p::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: attr(data-split);
-        width: 60%;
-        color: #fff;
-        overflow: hidden;
-    }
-
-    .main4 .main4_bt {
-        font-size: 1.6rem;
-        line-height: 80px;
-        letter-spacing: 20px;
-    }
-
-    .main4 .main4_bt span {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        border: 1.5px solid black;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .bt_black {
-        background-color: black;
-    }
-
-    .mainMap {
+    .maincon .mainbox {
         width: 90%;
+        margin: 4% auto;
         text-align: center;
-        margin: 0 auto
     }
-
-    .mainMap h3 {
+    .maincon .mainbox ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .maincon .mainbox ul h4 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 2.3rem;
-        line-height: 100px;
+        font-size: 2.1rem;
         font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 60px;
     }
-
-    .mainMap p {
-        font-size: 1rem;
-        line-height: 70px;
+    .maincon .mainbox ul h5 {
+        font-size: 1.1rem;
+        line-height: 50px;
     }
-
-    .mainMap p:nth-of-type(2) {
-        line-height: 20px;
+    .maincon .mainbox ul li {
+        width: 95%;
+        margin: 8% auto;
+    }
+    .maincon .mainbox ul li img {
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .maincon .mainbox ul li a:hover img {
+        opacity: 0.4;   
+    }
+    .maincon .mainbox ul li p {
+        line-height: 30px;
+        margin-bottom: 4%;
+        color: #666666;
+        font-weight: 400;
         font-size: 0.9rem;
-        word-break: keep-all;
     }
-
-
-
-
+    .maincon .mainbox ul li a:not(:nth-of-type(1)) {
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 2% 5%;
+        margin: 1% 4%;
+        color: black;
+        transition: all 0.4s;
+        font-size: 0.9rem;
+    }
+    .maincon .mainbox ul li a:hover:not(:nth-of-type(1)) {
+        background-color: black;
+        color: white;
+    }
+    .maincon .mainbox ul li a:nth-of-type(1) {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        transition: all 0.5s;
+    }
+    .maincon .mainbox ul li a i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #333;
+        font-size: 3.6rem;
+        opacity: 0.8;
+        display: none;
+        transition: all 0.4s;
+    }
+    .maincon .mainbox ul li a:hover i {
+        display: block;
+    }
     /* 위로가기 버튼 */
 
     .upicon {
@@ -508,8 +322,8 @@
     /* 푸터 */
     footer {
         width: 100%;
-        margin-top: 15%;
-        background-color: #dddddd;
+        margin-top: 20%;
+        background-color: #eae9e0;
     }
 
     footer .footinner {

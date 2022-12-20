@@ -60,6 +60,7 @@ nav > ul {
     width: 80%;
     margin: 0 auto;
     display: flex;
+
     justify-content: center;   
 }
 nav > ul > li {
@@ -145,24 +146,29 @@ nav button {
     color: black;
 }
 
-
-
+                    /* 메인시작 */
+.maincon {
+    width: 100%;
+    margin: -10% auto 10%;
+}
 .maincon h1, h3, h6 {
     letter-spacing: 0.8px;
     font-weight: 400;
     text-align: center;
 }
 .maincon h1 {
-    font-size: 4.2rem;
+    font-size: 1.8rem;
     line-height: 80px;
     font-family: 'Tenor Sans', sans-serif;
 }
 .maincon h3 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+    font-weight: 500;
 }
 .maincon h6 {
     font-size: 1.2rem;
     font-weight: 500;
+    line-height: 60px;
 }
 .maincon .mainbox {
     width: 90%;
@@ -189,6 +195,10 @@ nav button {
 .maincon .mainbox ul li img {
     width: 100%;
     cursor: pointer;
+    transition: all 0.2s;
+}
+.maincon .mainbox ul li a:hover img {
+    opacity: 0.4;   
 }
 .maincon .mainbox ul li p {
     line-height: 30px;
@@ -208,7 +218,27 @@ nav button {
     background-color: black;
     color: white;
 }
-
+.maincon .mainbox ul li a:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+.maincon .mainbox ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 3.6rem;
+    opacity: 0.8;
+    display: none;
+    transition: all 0.4s;
+}
+.maincon .mainbox ul li a:hover i {
+    display: block;
+}
 
 /* 위로가기 버튼 */
 
