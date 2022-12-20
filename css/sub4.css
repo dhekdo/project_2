@@ -149,7 +149,7 @@ nav button {
                     /* 메인시작 */
 .maincon {
     width: 100%;
-    margin: -10% auto 10%;
+    margin: -1% auto 10%;
 }
 .maincon h1, h3, h6 {
     letter-spacing: 0.8px;
@@ -157,12 +157,12 @@ nav button {
     text-align: center;
 }
 .maincon h1 {
-    font-size: 1.8rem;
+    font-size: 4.7rem;
     line-height: 80px;
     font-family: 'Tenor Sans', sans-serif;
 }
 .maincon h3 {
-    font-size: 1.55rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 .maincon h6 {
