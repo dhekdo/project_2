@@ -1,4 +1,5 @@
-// 메뉴바 클릭시 전환
+window.onload = function(){
+    // 메뉴바 클릭시 전환
 if (window.matchMedia("(min-width: 1280px)").matches) { 
     $('.barmenu').click(function () {
         $('header').toggleClass("headerbg");
@@ -7,7 +8,6 @@ if (window.matchMedia("(min-width: 1280px)").matches) {
         $('.searchBox').hide();
     
     });
-    
 
 } else { 
     $('.barmenu').click(function () {
@@ -57,5 +57,4 @@ $('.bt3').click(function (){
     $('.bt2').removeClass('bt_black');
     $('.bt1').removeClass('bt_black');
 });
-
-
+}
